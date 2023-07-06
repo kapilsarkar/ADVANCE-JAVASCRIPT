@@ -1,34 +1,47 @@
-//Variables in Java Script
-let fullName = 'Kapil Sarkar'
+console.log('Kapil Sarkar')
 
-const age = 32
+let n = 100
+console.log(typeof  n)
 
-console.log(`Hello my Name is :${fullName} and my age is ${age}`)
+let n1 = '100'
 
+console.log(typeof n1)
 
+console.log(typeof  +`n1`) //Conversion of String Data Type into Number
 
-console.log(education)
-var education = 'MCA'
+let n2 = -'200'
+console.log(typeof n2)
 
+//String Data Types be Converted into Number Data Type by the + or -
 
-//console.log(fullEducation) --Wrong Process
-let fullEducation = 'BCA + MCA'
-console.log(`My Qualifications are : ${fullEducation}`)
+let n3 = parseInt('100Kapil')
+console.log(typeof n3)
 
-// let vs var --- let is block scope variable and var is a functional scope variable
-//In Case of let variable cannot be used before initialization means it cam be used within the block scope and in case of var variable can be used before initialization it is functional scope variable
+let n4 = 100 + 'Kapil'
+console.log(typeof n4)  //Conversion of String Data Types into Numbers
 
-//How Java Script Code is executed---
+let n5 = true
+console.log(typeof n5)
 
-var n = 2
+console.log(typeof + `n5`) //Conversion of Boolean Data Type into Number
 
-function square(num){
-    var ans = num * num ;
-    return ans;
-}
+let n6= undefined
+console.log(typeof  n6)
 
-var square2 = square(n);
-var square4 = square(4);
+console.log(typeof + `n6`) //Conversion of undefined Data Type into number
 
-console.log(square2)
-console.log(square4)
+let n7 = null
+
+console.log(typeof n7)
+
+console.log(typeof + `n7`) //Conversion of null data type to number
+
+let n8 = NaN
+console.log(typeof n8)
+
+console.log( typeof + `n8`)
+
+let n9 = BigInt
+
+console.log(typeof n9)
+console.log(typeof + `n9`) //Conversion of bigInt Data Type into Number

@@ -1,59 +1,46 @@
-//Comparison Operator in Java Script---
-const user1Age = 18
-const user2Age = 24
-const user3Age = '24'
-console.log(user1Age == user2Age)
-console.log(user2Age == user3Age)  //Behind the scene string is converted into number so implicit conversion
+//Exponential Operator
 
-//It is an implicit conversion or behind the scene conversion
+const exp = 5 **2
+console.log(exp)
 
-//Strict equality---
+//SQUARE ROOT 
 
-const num1 = '50'
-const num2 = 50
-console.log(num1===num2) //Explicit Conversion
-console.log(+num1 === num2)
+console.log(Math.sqrt(25))
+console.log(Math.SQRT2)
 
-//Not Equal---
+//MATH.POW--
+console.log(Math.pow(2,5))
 
-const num3 = 24
-const num4 = 24
-console.log(num3 != num4)
+//MATH.FLOOR--
+console.log(Math.floor(2.3))
+console.log(Math.floor(2.99))
 
-//Not Equal Strict Mode---
+//MATH.CEIL---
 
-const num5 = '30'
-const num6 = 30
-console.log(num5 !== num6)
+console.log(Math.ceil(2.3))
+console.log(Math.ceil(2.9))
 
-//Logical Operator in Java Script ---
-const andResult = Boolean (0 && 2)
-console.log(andResult)
+//MATH.ROUND---
+console.log(Math.round(4.6))
+console.log(Math.round(4.2))
 
-const orResult = Boolean (0 || 2)
-console.log(orResult)
+//MATH.RANDOM---
+console.log(Math.random())
+console.log(Math.random()*20)
+console.log(Math.floor(Math.random()*20))
+console.log(Math.ceil(Math.random()*20))
 
-const andResult2 = Boolean ('' && 'hello')
-console.log(andResult2)
+//FIND A NUMBER BETWEEN 10 AND 20 AND REMOVE THE DECIMAL PART---
 
- const orResult2 = Boolean('' || 'hello')
- console.log(orResult2)
+const num1 = 10;
+const num2 = 20;
+const ans = Math.floor(Math.random()* (num2-num1)+num1)
+console.log(ans)
 
- const andResult3 = 'Hello' && null
-console.log(andResult3)
+//TRUTHY AND FALSY VALUES---
+const number1 =  Boolean(10)
+console.log(number1)
 
-const orResult4 = 'Hello' || null
-console.log(orResult4)
+const number2 = Boolean(0)
+console.log(number2)
 
-//Ternary Operator in Java Script---
-
-const userName = 5 > 10 ? 'Greater Value' : 'Lesser Value'
-console.log(userName)
-
-const gender = 'f'
-const userMessage = `${gender.toLowerCase() === 'f' ? 'She' : 'He'} is a College Student `
-console.log(userMessage)
-
-const value = 0
-const newResult = value ? 'Kapil' : 'Sarkar'
-console.log(newResult)
