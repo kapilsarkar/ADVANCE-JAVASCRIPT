@@ -19,3 +19,6 @@ const user2 = {
 }
 
 console.log(user1===user2)  //False  because  their address are different in memory they are  also called reference types because there address are different in memory
+
+console.log(user2)
+console.log(user2['lName'])
