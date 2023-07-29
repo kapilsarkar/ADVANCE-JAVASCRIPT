@@ -10,10 +10,10 @@ const container = document.querySelector(".container");
 //     container.append(newCard)
 // }
 
-const newImg = document.querySelector("img");
+// const newImg = document.querySelector("img");
 
-for (let i = 2; i <= 100; i++) {
-  const PokemonImg = newImg.cloneNode();
-  PokemonImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`
-  container.append(PokemonImg)
-}
+// for (let i = 2; i <= 100; i++) {
+//   const PokemonImg = newImg.cloneNode();
+//   PokemonImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`
+//   container.append(PokemonImg)
+// }
