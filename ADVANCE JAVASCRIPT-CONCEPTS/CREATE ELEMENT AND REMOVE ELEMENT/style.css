@@ -1,4 +1,4 @@
-container {
+.container {
     color: green;
     display: flex;
     flex-wrap: wrap;
@@ -7,4 +7,12 @@ container {
 
 img {
     width: 90px;
+}
+
+.img-container{
+    text-align: center;
+   
+}
+.img-container p {
+    margin: 0;
 }
