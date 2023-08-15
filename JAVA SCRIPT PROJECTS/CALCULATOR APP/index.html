@@ -4,37 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App</title>
+  
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
-   
-    <div class="calculator">
-        <!-- <h1 class="head">Calculator App</h1> -->
-      <div class="display">
-        <span class="input" id="input">0</span>
-      </div>
+     
+    <!-- <input type="text" class="input">
+      <button class="btn" value="1">1</button>
+      <button class="btn" value="2">2</button> -->
 
-      <div class="buttons">
-        <button class="btn op" id="ac">AC</button>
-        <button class="btn op" id="ac">DE</button>
-        <button class="btn op" id="dot">.</button>
-        <button class="btn op" id="divide">/</button>
-        <button class="btn num" id="7">7</button>
-        <button class="btn num" id="8">8</button>
-        <button class="btn num" id="9">9</button>
-        <button class="btn op" id="multiply">*</button>
-        <button class="btn num" id="4">4</button>
-        <button class="btn num" id="5">5</button>
-        <button class="btn num" id="6">6</button>
-        <button class="btn op" id="subtract">-</button>
-        <button class="btn num" id="1">1</button>
-        <button class="btn num" id="2">2</button>
-        <button class="btn num" id="3">3</button>
-        <button class="btn op" id="add">+</button>
-        <button class="btn zero" id="0">0</button>
-        <button class="btn equal" id="equal">=</button>
-      </div>
-    </div>
+      <section class="calculator">
+        <form>
+            <input type="text" class="screen">
+        </form>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" data-num="*">*</button>
+            <button type="button" class="btn btn-yellow" data-num="/">/</button>
+            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+">+</button>
+
+            <button type="button" class="btn btn-grey" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" data-num="7">7</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="1">1</button>
+            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" data-num=".">.</button>
+
+            <button type="button" class="btn btn-equal">=</button>
+            <button type="button" class="btn btn-clear">C</button>
+        </div>
+    </section>
+    
   </body>
 </html>
