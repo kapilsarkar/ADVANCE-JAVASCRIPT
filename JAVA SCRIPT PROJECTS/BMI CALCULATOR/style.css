@@ -5,6 +5,7 @@
     background-color: #232323;
     padding-left: 30px;
     color: #fff;
+    margin-inline: auto;
   }
   #height,
   #weight {
