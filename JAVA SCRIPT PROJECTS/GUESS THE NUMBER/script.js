@@ -17,6 +17,7 @@ if (playGame) {
     e.preventDefault();
     const guess = parseInt(submit.value);
     valiDateGuess(guess)
+    console.log(valiDateGuess(guess))
   });
 }
 
