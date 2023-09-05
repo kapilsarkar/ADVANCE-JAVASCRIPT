@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align:  center;
+   
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #fff;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: rgb(222, 6, 6);
+    border: 1px solid rgb(183, 253, 8);
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+#input{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 15rem;
+}
+.start-game  :disabled {
+    cursor: not-allowed;
+}
