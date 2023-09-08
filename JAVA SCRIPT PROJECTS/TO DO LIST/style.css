@@ -1,0 +1,18 @@
+body{
+    background-color:rgba(0, 0, 0, 0.922);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head{
+    text-align: center;
+}
+
+.container{
+    margin-inline: auto;
+    
+}
+
+.input{
+    width: 25rem;
+    height: 2rem;
+}
