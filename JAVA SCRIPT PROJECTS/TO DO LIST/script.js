@@ -30,25 +30,23 @@ btnAdd.addEventListener("click", (e) => {
     h2.appendChild(Edit);
 
     Edit.addEventListener("click", function (e) {
-      const UpdateBox = document.createElement("input");
+      let UpdateBox = document.createElement("input");
       UpdateBox.id = "Update";
       Edit.remove();
       const UpdateBtn = document.createElement("button");
       UpdateBtn.innerText = "Update";
       UpdateBtn.className = "UpdateBtn";
-      UpdateBtn.addEventListener("click", (e) => {
-        let updateValue = UpdateBox.value;
-        h2.innerText = updateValue;
 
-        Del = document.createElement("button");
-        Del.className = "DeleteBtn";
-        Del.innerText = "Delete";
-        h2.appendChild(Del);
-        h2.appendChild(Edit);
-        input.value = "";
-        Del.addEventListener("click", (e) => {
-          h2.remove();
-        });
+      UpdateBtn.addEventListener("click", (e) => {
+        if (UpdateBox.value == "") {
+          alert("Please Update Your Task");
+        } else {
+          let updateValue = UpdateBox.value;
+          h2.innerText = updateValue;
+
+          h2.appendChild(Del);
+          h2.appendChild(Edit);
+        }
       });
 
       h2.appendChild(UpdateBtn);
