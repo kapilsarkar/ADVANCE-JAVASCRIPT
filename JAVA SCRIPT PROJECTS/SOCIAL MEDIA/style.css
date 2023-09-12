@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 5px;
 }
 .star1 {
   border-radius: 50%;
@@ -26,9 +27,74 @@ body {
   background: url("./images/hrithik.jpeg");
   background-position: center;
   padding: 70px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
-.start1btn{
-    background-color: rgb(13, 13, 217);
-    color: #fff;
-    padding: 1px 10px;
+.start1btn {
+  background-color: rgb(13, 13, 217);
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
+#tick {
+  color: #fff;
+  background-color: rgb(14, 14, 225);
+  border-radius: 50%;
+  padding: 3.2px;
+  margin-left: 5px;
+  border-style: dashed;
+}
+#social-starsPic1{
+  margin-top: 3px;
+  background-position: center; 
+  min-height: 380px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.social-starsPicName{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+.socialCount1{
+  margin-top: 1rem;
+  padding: 2px 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#IconLike1{
+  /* color: #e72e0d; */
+  font-size: 2rem;
+  cursor: pointer;
+}
+#IconDisLike1{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.comment1{
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+}
+.List1{
+  
+  font-size: 1.2rem;
+  padding: 1px 2px;
+  border-radius: 12px;
+}
+.Start1comments{
+  display: grid;
+}
+/* #IconComment1{
+  color: rgb(2, 32, 2);
+  font-size: 1.5rem;
+} */
+
+
