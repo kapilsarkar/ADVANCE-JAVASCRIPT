@@ -5,6 +5,9 @@ body {
 }
 .head {
   text-align: center;
+  background-color: rgb(245, 19, 57);
+  padding: 10px;
+  margin-top: -0.3px;
 }
 .container {
   max-width: 1250px;
@@ -13,6 +16,7 @@ body {
   border-radius: 3px;
   margin-inline: auto;
   box-shadow: 3px 5px 5px 3px rgb(154, 238, 8);
+  
 }
 .social-stars {
   display: flex;
@@ -47,7 +51,7 @@ body {
   margin-bottom: 15px;
   cursor: pointer;
 }
-.start2btn{
+.start2btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -65,8 +69,7 @@ body {
   cursor: pointer;
 }
 
-
-.start3btn{
+.start3btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -84,8 +87,7 @@ body {
   cursor: pointer;
 }
 
-
-.start4btn{
+.start4btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -104,8 +106,7 @@ body {
   cursor: pointer;
 }
 
-
-.start5btn{
+.start5btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -123,8 +124,7 @@ body {
   cursor: pointer;
 }
 
-
-.start6btn{
+.start6btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -143,8 +143,7 @@ body {
   cursor: pointer;
 }
 
-
-.start7btn{
+.start7btn {
   background-color: rgb(13, 13, 217);
   color: #fff;
   padding: 5px 20px;
@@ -160,21 +159,21 @@ body {
   margin-left: 5px;
   border-style: dashed;
 }
-#social-starsPic1{
+#social-starsPic1 {
   margin-top: 3px;
-  background-position: center; 
+  background-position: center;
   min-height: 380px;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
-.social-starsPicName{
+.social-starsPicName {
   text-align: center;
   font-size: 1.2rem;
   color: #fff;
   font-weight: 700;
   padding-top: 1rem;
 }
-.socialCount1{
+.socialCount1 {
   margin-top: 1rem;
   padding: 2px 3px;
   text-align: center;
@@ -184,30 +183,28 @@ body {
   flex-wrap: wrap;
 }
 
-#IconLike1{
+#IconLike1 {
   /* color: #e72e0d; */
   font-size: 2rem;
   cursor: pointer;
 }
-#IconDisLike1{
+#IconDisLike1 {
   font-size: 2rem;
   cursor: pointer;
 }
-.comment1{
+.comment1 {
   font-size: 2rem;
   cursor: pointer;
   /* display: flex; */
 }
-.List1{
-  
+.List1 {
   font-size: 1.2rem;
   padding: 1px 2px;
   border-radius: 12px;
 }
-.Start1comments{
+.Start1comments {
   display: grid;
   font-size: 1.2rem;
-  
 }
 
 /* #IconComment1{

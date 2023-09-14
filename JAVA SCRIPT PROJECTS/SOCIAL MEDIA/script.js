@@ -11,7 +11,7 @@ const IconComment1 = document.querySelector("#IconComment1");
 const comment1 = document.querySelector(".comment1");
 const Start1comments = document.querySelector(".Start1comments");
 window.addEventListener("load", (e) => {
-  socialStarPic.style.backgroundImage = "url(./images/banner2.gif)";
+  socialStarPic.style.backgroundImage = "url(./images/banner1.webp)";
 
   socialCount1.style.visibility = "hidden";
 });
@@ -224,3 +224,8 @@ star7.addEventListener("click", function (e) {
   IconComment1.style.color = "#fff";
   Start1comments.innerHTML = "";
 });
+
+//code for animation--
+
+
+
