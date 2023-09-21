@@ -48,3 +48,7 @@ if(myData.names){
 if(myData.age){
   ageElementObj.innerText = myData.age
 }
+
+//localStorage.clear()
+
+//localStorage.removeItem('myData')
