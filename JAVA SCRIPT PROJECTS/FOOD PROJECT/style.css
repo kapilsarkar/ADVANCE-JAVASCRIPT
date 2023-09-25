@@ -7,7 +7,7 @@ body {
   background-color: #f6f0eb;
   font-family: "Poppins", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -18,20 +18,19 @@ a {
 
 header {
   background-color: #fff;
- 
+  padding: 24px;
   
 }
-.header-content{
+.header-content {
   max-width: 1290px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 32px;
+  
 }
 nav {
   display: flex;
-
 }
 nav a {
   font-weight: 700;
@@ -65,25 +64,131 @@ main {
   text-align: center;
   font-size: 24px;
 }
-.section{
-    margin-top: 120px;
+.section {
+  margin-top: 120px;
 }
 .section .img-container {
-    max-width: 960px;
+  max-width: 960px;
 }
-.section h2{
-    font-size: 48px;
-    font-weight: 700;
-    color: #492118;
-    text-align: center;
+.section h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #492118;
+  text-align: center;
 }
-.go-to-top{
+.go-to-top {
   text-align: right;
   max-width: 960px;
   margin: 0 auto;
   font-size: 32px;
 }
-.go-to-top a{
+.go-to-top a {
   text-decoration: underline;
   margin-top: 150px;
+}
+.close-icon {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  cursor: pointer;
+  display: none;
+}
+.humburger-menu-container {
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: none;
+ 
+}
+.humburger-menu {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  top: -100px;
+  right: -100px;
+  background-color: #fff;
+}
+.humburger-icon {
+  font-size: 32px;
+  position: absolute;
+  bottom: 32px;
+  left: 41px;
+}
+
+@media (max-width: 1100px) {
+  nav a {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  nav a + a {
+    margin-left: 32px;
+  }
+
+  header {
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 960px) {
+  nav a {
+    font-weight: 700;
+    font-size: 12px;
+  }
+  nav a + a {
+    margin-left: 24px;
+  }
+  .hero-section {
+    margin-top: 32px;
+  }
+  .section {
+    margin-top: 42px;
+  }
+  .hero-section p {
+    font-size: 12px;
+  }
+  .section h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  nav {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    flex-direction: column;
+    right: 24px;
+    top: 24px;
+    padding: 24px;
+     display: none;
+  }
+  
+  nav a + a {
+    margin: 0;
+    margin-top: 16px;
+  }
+  .close-icon {
+    display: block;
+  }
+  .humburger-menu-container{
+    display: block;
+  }
+  .menu-open nav{
+    display: flex;
+  }
+  .menu-open .humburger-menu-container {
+    display: none;
+  }
+  .header-content{
+    min-height: 100px;
+  }
 }
