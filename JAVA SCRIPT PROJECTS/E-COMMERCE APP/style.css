@@ -82,6 +82,58 @@ nav a {
   cursor: pointer;
 }
 
+.mobile{
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.mobile-head{
+  background-color: rgb(16 126 5);
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 32px;
+  text-align: center;
+}
+.mobile-list{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.first-mobile{
+  width: 46%;
+  padding: 1rem;
+}
+.mobile-1-img{
+  width: 35%;
+  margin-inline: auto;
+}
+.mobile-1-text{
+ 
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.mobile-1-price{
+  margin-top: 1rem;
+  padding:3px 7px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.mobile-1-btn{
+  background-color: #2aa611;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+.cartNumber{
+  font-size: 1rem;
+}
+
 @media (max-width: 768px) {
   .menu-container {
     display: none;
@@ -108,10 +160,51 @@ nav a {
     right: 10px;
     font-size: 1.5rem;
   }
+  .mobile-list{
+    flex-direction: column;
+  }
+  .mobile-1-text{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .mobile-1-price{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .mobile-1-btn{
+    padding: 3px 6px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:542px) {
+  .mainHead{
+    font-size: 20px;
+  }
+  #dark-mode{
+    font-size: 0.8rem;
+  }
+
+  #cart{
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 380px) {
   .mainHead {
-    font-size: 18px;
+    font-size: 12px;
+  }
+  #dark-mode{
+    font-size: 0.8rem;
+  }
+
+  #cart{
+    font-size: 0.8rem;
+  }
+  .nav-menu{
+    padding: 14px;
+  }
+  .first-mobile{
+    width: 50%;
   }
 }
