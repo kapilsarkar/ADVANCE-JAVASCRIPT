@@ -17,8 +17,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="./script.js" defer></script>
+
+    <script src="./slider.js" defer></script>
     <title>E-Commerce</title>
   </head>
   <body>
@@ -41,7 +51,9 @@
           id="dark-mode"
           style="color: #fff"
         ></i>
-        <i class="fa-solid fa-cart-shopping" id="cart" style="color: #fff"><span class="cartNumber"></span></i>
+        <i class="fa-solid fa-cart-shopping" id="cart" style="color: #fff"
+          ><span class="cartNumber"></span
+        ></i>
         <div class="humburger-menu">
           <span class="humburger-icon">&#9776;</span>
         </div>
@@ -49,24 +61,65 @@
     </header>
     <!-- Header Section Ends -->
 
+    <!-- Slider Section Starts -->
+    <section class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/banner1.webp" alt="banner-1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner2.webp" alt="banner-2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/banner3.webp" alt="banner-3" />
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
     <!-- Mobile Section Starts -->
 
     <section class="mobile">
       <h2 class="mobile-head">MOBILES</h2>
       <div class="mobile-list">
-         <div class="first-mobile">
+        <div class="first-mobile">
           <p class="mobile-1-text">APPLE iPhone 14 (Starlight, 128 GB)</p>
-           <img src="./images/mobile-1.webp" class="mobile-1-img" alt="mobile1">
-           <p class="mobile-1-price">₹64,999</p>
-           <button class="mobile-1-btn" >Add To Cart</button>
-         </div>
-         <div class="first-mobile">
+          <img
+            src="./images/mobile-1.webp"
+            class="mobile-1-img"
+            alt="mobile1"
+          />
+          <p class="mobile-1-price">₹64,999</p>
+          <button class="mobile-1-btn">Add To Cart</button>
+        </div>
+        <div class="first-mobile">
           <p class="mobile-1-text">APPLE iPhone 14 Plus (Blue, 128 GB)</p>
-           <img src="./images/mobile-2.webp" class="mobile-1-img" alt="mobile1">
-           <p class="mobile-1-price">₹73,999</p>
-           <button class="mobile-1-btn">Add To Cart</button>
-         </div>
+          <img
+            src="./images/mobile-2.webp"
+            class="mobile-1-img"
+            alt="mobile1"
+          />
+          <p class="mobile-1-price">₹73,999</p>
+          <button class="mobile-2-btn">Add To Cart</button>
+        </div>
+        <div class="first-mobile">
+          <p class="mobile-1-text">APPLE iPhone 13 (Midnight, 128 GB)</p>
+          <img
+            src="./images/mobile-3.webp"
+            class="mobile-1-img"
+            alt="mobile1"
+          />
+          <p class="mobile-1-price">₹52,499</p>
+          <button class="mobile-3-btn">Add To Cart</button>
+        </div>
+      </div>
+      <div class="clear-btn">
+        <button class="mobile-clear">Clear Cart</button>
       </div>
     </section>
+    <!-- Mobile Section Ends -->
   </body>
 </html>
