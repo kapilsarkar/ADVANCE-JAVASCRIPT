@@ -11,8 +11,6 @@ humBurgerMenu.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   menuContainer.style.display = "none";
   humBurgerMenu.style.display = "block";
-  //location.reload();
- 
 });
 
 darkMode.addEventListener("click", () => {
@@ -41,16 +39,13 @@ let fullCart = [
   },
 ];
 
-mobile1Btn.addEventListener("click", (e) => {
-  fullCart.map((item) => {
-    console.log(item.id);
-    console.log(item.price);
-    console.log(item.name);
-    cartNumber.innerText = num++;
-  });
+mobile1Btn.addEventListener("click", () => {
+  cartNumber.innerText = num++;
   mobile1Btn.disabled = true;
   mobile1Btn.innerText = "Item Added";
 });
+
+
 
 //coding for mobile-2
 
@@ -74,17 +69,16 @@ mobile3Btn.addEventListener("click", () => {
 
 //code for clearing mobile-cart
 
-const clearMobileCart = document.querySelector('.mobile-clear');
+const clearMobileCart = document.querySelector(".mobile-clear");
 
-clearMobileCart.addEventListener('click',()=>{
-   num = 0;
-  cartNumber.innerText = ""
+clearMobileCart.addEventListener("click", () => {
+  num = 0;
+  cartNumber.innerText = "";
   mobile1Btn.innerText = "Add To Cart";
-  mobile1Btn.disabled = false
+  mobile1Btn.disabled = false;
   mobile2Btn.innerText = "Add To Cart";
-  mobile2Btn.disabled = false
+  mobile2Btn.disabled = false;
   mobile3Btn.innerText = "Add To Cart";
-  mobile3Btn.disabled = false
-})
-
-
+  mobile3Btn.disabled = false;
+  location.reload();
+});

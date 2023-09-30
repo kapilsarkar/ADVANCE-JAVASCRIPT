@@ -44,6 +44,7 @@ body.dark {
   background-color: rgb(16 126 5);
   color: #fff;
   padding: 10px 15px;
+ 
 }
 main {
   display: flex;
@@ -120,6 +121,14 @@ nav a {
   padding: 10px 10px;
   font-size: 20px;
   text-align: center;
+}
+.laptop-head{
+  background-color: rgb(16 126 5);
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
 }
 .mobile-list {
   margin-top: 2rem;
@@ -214,6 +223,7 @@ nav a {
   .close-icon {
     display: block;
   }
+ 
   .humburger-menu {
     display: block;
     position: absolute;
