@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .slider {
   margin-top: 1px;
 }
@@ -137,11 +139,26 @@ nav a {
   justify-content: center;
   /* flex-wrap: wrap; */
 }
+.laptop-list{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .first-mobile {
   width: 46%;
   padding: 1rem;
 }
+.first-laptop{
+  width: 46%;
+  padding: 1rem;
+}
 .mobile-1-img {
+  width: 35%;
+  margin-inline: auto;
+  border-radius: 20px;
+}
+.laptop-1-img{
   width: 35%;
   margin-inline: auto;
   border-radius: 20px;
@@ -151,7 +168,18 @@ nav a {
   padding: 1rem;
   font-size: 1.5rem;
 }
+.laptop-1-text{
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
 .mobile-1-price {
+  margin-top: 1rem;
+  padding: 3px 7px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.laptop-1-price{
   margin-top: 1rem;
   padding: 3px 7px;
   font-weight: 700;
@@ -184,23 +212,63 @@ nav a {
   border: none;
   border-radius: 3px;
 }
+.laptop-1-btn {
+  background-color: #2aa611;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+.laptop-2-btn {
+  background-color: #2aa611;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+.laptop-3-btn {
+  background-color: #2aa611;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
 .cartNumber {
   font-size: 1rem;
 }
 .clear-btn {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-top: 5px;
+  position: sticky;
 }
 .mobile-clear {
-  padding: 10px 12px;
+  padding: 50px 5px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   background-color: #e00e3b;
   color: #fff;
   cursor: pointer;
+}
+.footer{
+  width: 100%;
+  margin-top: 3rem;
+}
+.footer-head{
+  background-color: #2aa611;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 3rem;
+  color: #fff;
 }
 @media (max-width: 768px) {
   .menu-container {
@@ -233,11 +301,22 @@ nav a {
   .mobile-list {
     flex-direction: column;
   }
+  .laptop-list{
+    flex-direction: column;
+  }
   .mobile-1-text {
     font-size: 1rem;
     font-weight: 500;
   }
+  .laptop-1-text{
+    font-size: 1rem;
+    font-weight: 500;
+  }
   .mobile-1-price {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .laptop-1-price{
     font-size: 1rem;
     font-weight: 500;
   }
@@ -250,6 +329,18 @@ nav a {
     font-size: 1rem;
   }
   .mobile-3-btn {
+    padding: 3px 6px;
+    font-size: 1rem;
+  }
+  .laptop-1-btn{
+    padding: 3px 6px;
+    font-size: 1rem;
+  }
+  .laptop-2-btn{
+    padding: 3px 6px;
+    font-size: 1rem;
+  }
+  .laptop-3-btn{
     padding: 3px 6px;
     font-size: 1rem;
   }
@@ -283,6 +374,9 @@ nav a {
     padding: 14px;
   }
   .first-mobile {
+    width: 50%;
+  }
+  .first-laptop{
     width: 50%;
   }
 }

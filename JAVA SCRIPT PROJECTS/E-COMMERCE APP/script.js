@@ -45,8 +45,6 @@ mobile1Btn.addEventListener("click", () => {
   mobile1Btn.innerText = "Item Added";
 });
 
-
-
 //coding for mobile-2
 
 const mobile2Btn = document.querySelector(".mobile-2-btn");
@@ -80,5 +78,44 @@ clearMobileCart.addEventListener("click", () => {
   mobile2Btn.disabled = false;
   mobile3Btn.innerText = "Add To Cart";
   mobile3Btn.disabled = false;
+
+  //for laptop
+
+  laptop1Btn.innerText = "Add To Cart";
+  laptop1Btn.disabled = false;
+  laptop2Btn.innerText = "Add To Cart";
+  laptop2Btn.disabled = false;
+  laptop3Btn.innerText = "Add To Cart";
+  laptop3Btn.innerText = false;
   location.reload();
+});
+
+//code for laptop-1
+
+const laptop1Btn = document.querySelector(".laptop-1-btn");
+
+laptop1Btn.addEventListener("click", () => {
+  cartNumber.innerText = num++;
+  laptop1Btn.disabled = true;
+  laptop1Btn.innerText = "Item Added";
+});
+
+//code for laptop-2
+
+const laptop2Btn = document.querySelector(".laptop-2-btn");
+
+laptop2Btn.addEventListener("click", () => {
+  cartNumber.innerText = num++;
+  laptop2Btn.disabled = true;
+  laptop2Btn.innerText = "Item Added";
+});
+
+//code for laptop-3
+
+const laptop3Btn = document.querySelector(".laptop-3-btn");
+
+laptop3Btn.addEventListener("click", () => {
+  cartNumber.innerText = num++;
+  laptop3Btn.disabled = true;
+  laptop3Btn.innerText = "Item Added";
 });
