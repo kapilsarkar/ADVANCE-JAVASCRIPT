@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232323;
+    color: #fff;
+}
+.head{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 5px;
+}
+.mainBox{
+    font-size: 24px;
+    width: 20%;
+    
+}
+.addTask{
+    background-color: rgb(6, 95, 6);
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.display-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
