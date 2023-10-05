@@ -35,4 +35,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+}
+
+.displayText{
+    width: 20%;
+    background-color: rgb(128, 9, 24);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
