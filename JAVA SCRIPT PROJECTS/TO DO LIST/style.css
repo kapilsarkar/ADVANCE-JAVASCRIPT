@@ -70,3 +70,26 @@ body{
     border: none;
     border-radius: 0.5rem;
 }
+
+@media(max-width:1010px){
+    .input{
+        width: 15rem;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width:510px){
+    .input{
+        width: 10rem;
+        font-size: 0.5rem;
+        margin-left: 2rem;
+    }
+}
+
+@media(max-width:380px){
+    .input{
+        width: 5rem;
+    }
+}

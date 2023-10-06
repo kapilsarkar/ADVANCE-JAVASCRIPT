@@ -21,10 +21,10 @@ addTaskBtn.addEventListener("click", (e) => {
 function viewData() {
   const allData = JSON.parse(localStorage.getItem("myData"));
 
-  allData.map((item) => {
+  allData.map((item, index) => {
     let para = document.createElement("p");
-    para.innerText = item
-    
+    para.innerHTML = item;
+    para.innerHTML = index;
     displayText.appendChild(para);
   });
 }
