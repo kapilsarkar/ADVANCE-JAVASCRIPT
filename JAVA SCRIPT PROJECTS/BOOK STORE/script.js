@@ -1,32 +1,35 @@
-const bookNameInput = document.querySelector(".bookName");
-const bookYearInput = document.querySelector(".bookYear");
+const fullNameInput = document.querySelector(".fullName");
+const contactNoInput = document.querySelector(".contactNo");
 const btnSave = document.querySelector(".btnSave");
 
-const bookData = JSON.parse(localStorage.getItem("bookData")) || {};
+const fullData = JSON.parse(localStorage.getItem("fullData")) || {};
 
 btnSave.addEventListener("click", (e) => {
-  //Save Book Name
-  bookData.bookName = bookNameInput.value;
-  localStorage.setItem("bookData", JSON.stringify(bookData));
+  if (fullNameInput.value == "" && contactNoInput.value == "") {
+    alert("Please Enter Details");
+  } else {
+    //Save Full Name
+    fullData.fullName = fullNameInput.value;
 
-  //Save Book Year
+    localStorage.setItem("fullData", JSON.stringify(fullData));
 
-  bookData.year = bookYearInput.value;
-  localStorage.setItem("bookData", JSON.stringify(bookData));
+    //Save  Contact No
+
+    fullData.contactNo = contactNoInput.value;
+
+    localStorage.setItem("fullData", JSON.stringify(fullData));
+  }
 });
 
 const searchBoxInput = document.querySelector(".searchBookName");
 const searchBtn = document.querySelector(".searchBtn");
-const searchDetails = document.querySelector('.searchDetails')
-searchBtn.addEventListener("click",(e)=>{
-
-  if(searchBoxInput.value ==""){
-      alert('Please Enter Details')
+const searchDetails = document.querySelector(".searchDetails");
+searchBtn.addEventListener("click", (e) => {
+  if (searchBoxInput.value == "") {
+    alert("Please Enter Details");
+  } else if (searchBoxInput.value === fullData.fullName) {
+    searchDetails.innerText = `Your Contact Number is : ${fullData.contactNo}`;
+  } else {
+    searchDetails.innerText = "Invalid Details";
   }
-  else if(searchBoxInput.value === bookData.bookName){
-    searchDetails.innerText = bookData.year
-  }
-  else{
-    searchDetails.innerText = "Invalid Details"
-  }
-})
+});
