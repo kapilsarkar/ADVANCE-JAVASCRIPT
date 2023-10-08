@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: rgb(223, 225, 121);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup{
+    width: 500px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 16px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+    padding: 9px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    /* display: none; */
+}
+.popup.open{
+  /* display: block; */
+  transform: scale(1);
+}
+.close-icon{
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+    
+}
