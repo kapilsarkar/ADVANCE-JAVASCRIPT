@@ -3,32 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Store</title>
+    <title>Personal Details App</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
+    <h1 class="main-head">Personal Details App</h1>
     <section class="first-Section">
+     
       <div class="container">
-        <h3>Personal Details</h3>
-  
+        <h3 class="heading">Enter Details</h3>
+
         <p class="containerDetails">
           Full Name : <input type="text" class="fullName" />
         </p>
         <p class="containerDetails">
           Contact No : <input type="number" class="contactNo" />
         </p>
+        <p class="containerDetails">
+          E-Mail ID : <input type="email" class="email" />
+        </p>
         <button class="btnSave">Save</button>
+        <div class="personalImg">
+          <img src="./images/personal3.gif" alt="image-1">
+        </div>
+        
       </div>
 
       <div class="container-search">
-        <h3>Search Details</h3>
-        <input type="text" class="searchBookName" />
+        <h3 class="heading">Search Details By Full Name</h3>
+        <input type="text" class="searchName" placeholder="Enter Full Name" />
         <button class="searchBtn">Search</button>
+        <button class="clearSearchBtn">Clear</button>
         <p class="searchDetails"></p>
+        <p class="searchEmail"></p>
       </div>
     </section>
-   
+
+    <section class="second-section">
+      <div class="expense-section">
+        <h3 class="heading">Enter Your Expenses Details</h3>
+         
+      </div>
+    </section>
     
   </body>
 </html>

@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232323;
+    color: #fff;
+}
+.main-head{
+    text-align: center;
+   background-color: rgb(154, 10, 10);
+    padding: 5px 10px;
+}
+.heading{
+    text-align: center;
+}
+.container{
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid #0ce40c;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+}
+
+.containerDetails{
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.fullName{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.contactNo{
+    font-size: 18px;
+    margin-left: 3px;
+}
+.email{
+    font-size: 18px;
+    margin-left: 18px;
+}
+.container-search{
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid #0ce40c;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+}
+.first-Section{
+    display: flex;
+}
+.btnSave{
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.searchName{
+    font-size: 18px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+.searchBtn{
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.clearSearchBtn{
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.searchDetails{
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none;
+}
+.searchEmail{
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none;
+}
+.personalImg{
+    margin-top: 3px;
+    width: 100%;
+}
+.personalImg img {
+    width: 100%;
+}
+.expense-section{
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid #0ce40c;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+}
+@media (max-width:960px) {
+    .first-Section{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 70%;
+    }
+    .container-search{
+        width: 70%;
+    }
+}
+
+@media (max-width:600px){
+    .btnSave{
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+    .searchBtn{
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+    .clearSearchBtn{
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+    .fullName{
+        font-size: 15px;
+    }
+    .contactNo{
+        font-size: 15px;
+    }
+    .email{
+        font-size: 15px;
+    }
+    .searchName{
+        font-size: 15px;
+    }
+}
