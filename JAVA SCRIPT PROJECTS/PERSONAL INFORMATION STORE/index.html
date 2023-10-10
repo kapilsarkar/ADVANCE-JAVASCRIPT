@@ -24,6 +24,10 @@
           E-Mail ID : <input type="email" class="email" />
         </p>
         <button class="btnSave">Save</button>
+        <div class="containerSaveText">
+          <p class="containerSaveTextDetails">Data Saved</p>
+          <div class="close-icon">&times;</div>
+        </div>
         <div class="personalImg">
           <img src="./images/personal3.gif" alt="image-1">
         </div>
@@ -43,7 +47,34 @@
     <section class="second-section">
       <div class="expense-section">
         <h3 class="heading">Enter Your Expenses Details</h3>
-         
+         <p class="containerDetails">
+          Name : <input type="text" class="expensesInputName">
+         </p>
+         <p class="containerDetails">
+          Electricity Bill : <input type="number" class="electricBill">
+         </p>
+         <p class="containerDetails">
+          Food Bill : <input type="number" class="foodBill">
+         </p>
+         <p class="containerDetails">
+          House Rent : <input type="number" class="houseBill">
+         </p>
+         <p class="containerDetails">
+          Number of Days(Month) : <input type="number" class="noOfMonth">
+         </p>
+         <button class="saveExBtn">Save</button>
+      </div>
+      <div class="expense-search">
+        <h3 class="heading">Search Your Expenses Details By Name</h3>
+        <input type="text" class="searchExName" placeholder="Enter Full Name" />
+        <button class="searchExBtn">Search</button>
+        <button class="clearExSearchBtn">Clear</button>
+        <p class="ebillDetails"></p>
+        <p class="fdBillDetails"></p>
+        <p class="hsBillDetails"></p>
+        <p class="nofDays"></p>
+        <p class="totalExbill"></p>
+        <p class="billperDay"></p>
       </div>
     </section>
     

@@ -1,41 +1,11 @@
 const fullNameInput = document.querySelector(".fullName");
 const contactNoInput = document.querySelector(".contactNo");
 const emailInput = document.querySelector(".email");
-
+const containerSaveText = document.querySelector(".containerSaveText");
+const closeIcon = document.querySelector(".close-icon");
 const btnSave = document.querySelector(".btnSave");
-// const fullData = JSON.parse(localStorage.getItem("fullData")) || {};
 
-// btnSave.addEventListener("click", (e) => {
-//   if (fullNameInput.value == "" && contactNoInput.value == "") {
-//     alert("Please Enter Details");
-//   } else {
-//     //Save Full Name
-//     fullData.fullName = fullNameInput.value;
-
-//     localStorage.setItem("fullData", JSON.stringify(fullData));
-
-//     //Save  Contact No
-
-//     fullData.contactNo = contactNoInput.value;
-
-//     localStorage.setItem("fullData", JSON.stringify(fullData));
-//   }
-// });
-
-// const searchBoxInput = document.querySelector(".searchBookName");
-// const searchBtn = document.querySelector(".searchBtn");
-// const searchDetails = document.querySelector(".searchDetails");
-// searchBtn.addEventListener("click", (e) => {
-//   if (searchBoxInput.value == "") {
-//     alert("Please Enter Details");
-//   } else if (searchBoxInput.value === fullData.fullName) {
-//     searchDetails.innerText = `Your Contact Number is : ${fullData.contactNo}`;
-//   } else {
-//     searchDetails.innerText = "Invalid Details";
-//   }
-// });
-
-//NEW CODE--
+//CODE FOR SAVING PERSONAL DETAILS ---
 
 const myData = JSON.parse(localStorage.getItem("myData")) || [];
 
@@ -60,13 +30,16 @@ btnSave.addEventListener("click", (e) => {
     alert("Please Enter All Data");
   } else {
     addData(fullNameInput.value, contactNoInput.value, emailInput.value);
+    containerSaveText.classList.add("open");
   }
-
+  closeIcon.addEventListener("click", () => {
+    containerSaveText.classList.remove("open");
+  });
   fullNameInput.value = "";
   contactNoInput.value = "";
   emailInput.value = "";
 });
-
+//CODE FOR SEARCH PERSONAL DATA--
 const searchBoxInput = document.querySelector(".searchName");
 const searchDetails = document.querySelector(".searchDetails");
 const searchEmail = document.querySelector(".searchEmail");
@@ -83,11 +56,84 @@ searchBtn.addEventListener("click", (e) => {
     }
   });
 });
-
+//CODE FOR CLEARING SEARCH DETAILS OF PERSONAL DATA---
 clearSearchBtn.addEventListener("click", () => {
   searchBoxInput.value = "";
   searchDetails.innerText = "";
   searchEmail.innerText = "";
   searchDetails.style.display = "none";
   searchEmail.style.display = "none";
+});
+
+//CODE FOR EXPENSES---
+
+const expensesNameInput = document.querySelector(".expensesInputName");
+const electricBillInput = document.querySelector(".electricBill");
+const foodBillInput = document.querySelector(".foodBill");
+const houseBillInput = document.querySelector(".houseBill");
+const noOfMonthInput = document.querySelector(".noOfMonth");
+const saveExBtn = document.querySelector(".saveExBtn");
+
+const exData = JSON.parse(localStorage.getItem("exData")) || [];
+
+const exaddData = (exName, eBill, fdBill, hsBill, noOfMonth) => {
+  exData.push({
+    exName,
+    eBill,
+    fdBill,
+    hsBill,
+    noOfMonth,
+  });
+  localStorage.setItem("exData", JSON.stringify(exData));
+
+  return exName, eBill, fdBill, hsBill, noOfMonth;
+};
+
+saveExBtn.addEventListener("click", (e) => {
+  exaddData(
+    expensesNameInput.value,
+    electricBillInput.value,
+    foodBillInput.value,
+    houseBillInput.value,
+    noOfMonthInput.value
+  );
+  expensesNameInput.value = "";
+  electricBillInput.value = "";
+  foodBillInput.value = "";
+  houseBillInput.value = "";
+  houseBillInput.value = "";
+  noOfMonthInput.value = "";
+});
+
+//CODE FOR SEARCH EXPENSES DATA--
+
+const searchExNameInput = document.querySelector(".searchExName");
+const ebillDetails = document.querySelector(".ebillDetails");
+const fdBillDetails = document.querySelector(".fdBillDetails");
+const hsBillDetails = document.querySelector(".hsBillDetails");
+const nofDays = document.querySelector(".nofDays");
+const totalExbill = document.querySelector(".totalExbill");
+const billperDay = document.querySelector(".billperDay");
+
+const searchExBtn = document.querySelector(".searchExBtn");
+const clearExSearchBtn = document.querySelector(".clearExSearchBtn");
+
+searchExBtn.addEventListener("click", () => {
+  exData.filter((ex) => {
+    if (ex.exName === searchExNameInput.value) {
+      ebillDetails.style.display = "block";
+      ebillDetails.innerText = `Your E- Bill is : ${ex.eBill} `;
+      fdBillDetails.style.display = "block";
+      fdBillDetails.innerText = `Your Food Bill is : ${ex.fdBill}`;
+      hsBillDetails.style.display = "block";
+      hsBillDetails.innerText = `Your House Rent is : ${ex.hsBill}`;
+      nofDays.style.display = "block";
+      nofDays.innerText = `Total No Of Days in a Month is ${ex.noOfMonth}`;
+      totalExbill.style.display = "block";
+      let totBill = exData.reduce((acc, item) => {
+        return acc + JSON.parse(item.eBill + item.fdBill + item.hsBill);
+      }, 0);
+      totalExbill.innerText = `Your Total Bill is : ${totBill}`;
+    }
+  });
 });

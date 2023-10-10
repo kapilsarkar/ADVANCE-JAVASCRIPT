@@ -116,6 +116,114 @@ body{
     margin-top: 2rem;
     margin-left: 1.2rem;
 }
+.containerSaveText{
+    width: 50px;
+    height: 50px;
+    background-color: #FFEB3B;
+    border-radius: 16px;
+    position: absolute;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+    padding: 9px;
+    transform: scale(0);
+    color: #0d5c0d;
+    transition: transform 0.2s ease-in-out;
+}
+.containerSaveText.open{
+    transform: scale(1);
+}
+.close-icon{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+}
+.containerSaveTextDetails{
+    font-size: 12px;
+    font-weight: 700;
+}
+.second-section{
+    display: flex;
+}
+.expense-search{
+    width: 50%;
+    padding: 10px 20px;
+    border: 2px solid #0ce40c;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+}
+.searchExName{
+    font-size: 14px;
+    margin-top: 5px;
+    padding: 5px 7px;
+}
+.searchExBtn{
+    background-color: green;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 7px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.clearExSearchBtn{
+    background-color: green;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 7px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.ebillDetails{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none;
+}
+.fdBillDetails{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none;
+}
+.hsBillDetails{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none; 
+}
+.nofDays{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 9);
+    border-radius: 5px;
+    display: none; 
+}
+.totalExbill{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 156);
+    border-radius: 5px;
+    display: none; 
+}
+.billperDay{
+    padding: 5px 7px;
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    background-color: rgb(167, 9, 156);
+    border-radius: 5px;
+    display: none; 
+}
 @media (max-width:960px) {
     .first-Section{
         flex-direction: column;
