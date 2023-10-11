@@ -73,6 +73,8 @@ const foodBillInput = document.querySelector(".foodBill");
 const houseBillInput = document.querySelector(".houseBill");
 const noOfMonthInput = document.querySelector(".noOfMonth");
 const saveExBtn = document.querySelector(".saveExBtn");
+const secondSectionSaveText = document.querySelector(".secondSectionSaveText");
+const closeIcon2 = document.querySelector(".close-icon2");
 
 const exData = JSON.parse(localStorage.getItem("exData")) || [];
 
@@ -90,13 +92,26 @@ const exaddData = (exName, eBill, fdBill, hsBill, noOfMonth) => {
 };
 
 saveExBtn.addEventListener("click", (e) => {
-  exaddData(
-    expensesNameInput.value,
-    electricBillInput.value,
-    foodBillInput.value,
-    houseBillInput.value,
-    noOfMonthInput.value
-  );
+  if (
+    electricBillInput.value == "" &&
+    foodBillInput.value == "" &&
+    houseBillInput.value == "" &&
+    noOfMonthInput.value == ""
+  ) {
+    alert("Please Enter All Data");
+  } else {
+    exaddData(
+      expensesNameInput.value,
+      parseInt(electricBillInput.value),
+      parseInt(foodBillInput.value),
+      parseInt(houseBillInput.value),
+      parseInt(noOfMonthInput.value)
+    );
+    secondSectionSaveText.classList.add("open");
+  }
+  closeIcon2.addEventListener("click", () => {
+    secondSectionSaveText.classList.remove("open");
+  });
   expensesNameInput.value = "";
   electricBillInput.value = "";
   foodBillInput.value = "";
@@ -131,9 +146,34 @@ searchExBtn.addEventListener("click", () => {
       nofDays.innerText = `Total No Of Days in a Month is ${ex.noOfMonth}`;
       totalExbill.style.display = "block";
       let totBill = exData.reduce((acc, item) => {
-        return acc + JSON.parse(item.eBill + item.fdBill + item.hsBill);
+        return (
+          acc +
+          eval(
+            parseInt(item.eBill) + parseInt(item.fdBill) + parseInt(item.hsBill)
+          )
+        );
       }, 0);
-      totalExbill.innerText = `Your Total Bill is : ${totBill}`;
+      totalExbill.innerText = `Your Total Bill Including Tax is : ${totBill}`;
+      billperDay.style.display = "block";
+      billperDay.innerText = `Your PerDay Bill is ${parseInt(
+        totBill / ex.noOfMonth
+      )}`;
     }
   });
+});
+
+clearExSearchBtn.addEventListener("click", () => {
+  searchExNameInput.value = "";
+  ebillDetails.innerText = "";
+  ebillDetails.style.display = "none";
+  fdBillDetails.innerText = "";
+  fdBillDetails.style.display = "none";
+  hsBillDetails.innerText = "";
+  hsBillDetails.style.display = "none";
+  nofDays.innerText = "";
+  nofDays.style.display = "none";
+  totalExbill.innerText = "";
+  totalExbill.style.display = "none";
+  billperDay.innerText = "";
+  billperDay.style.display = "none";
 });

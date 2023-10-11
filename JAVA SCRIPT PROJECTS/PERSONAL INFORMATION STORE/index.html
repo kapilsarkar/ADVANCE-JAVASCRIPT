@@ -8,20 +8,20 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <h1 class="main-head">Personal Details App</h1>
+    <h2 class="main-head">Personal Details App</h2>
     <section class="first-Section">
      
       <div class="container">
         <h3 class="heading">Enter Details</h3>
 
         <p class="containerDetails">
-          Full Name : <input type="text" class="fullName" />
+          Full Name : <input type="text" class="fullName" placeholder="Enter Full Name" />
         </p>
         <p class="containerDetails">
-          Contact No : <input type="number" class="contactNo" />
+          Contact No : <input type="number" class="contactNo" placeholder="Enter Contact no" />
         </p>
         <p class="containerDetails">
-          E-Mail ID : <input type="email" class="email" />
+          E-Mail ID : <input type="email" class="email" placeholder="Enter E-Mail-id"/>
         </p>
         <button class="btnSave">Save</button>
         <div class="containerSaveText">
@@ -48,21 +48,25 @@
       <div class="expense-section">
         <h3 class="heading">Enter Your Expenses Details</h3>
          <p class="containerDetails">
-          Name : <input type="text" class="expensesInputName">
+          Name : <input type="text" class="expensesInputName" placeholder="Enter Full Name">
          </p>
          <p class="containerDetails">
-          Electricity Bill : <input type="number" class="electricBill">
+          E-Bill : <input type="number" class="electricBill" placeholder="E-Bill">
          </p>
          <p class="containerDetails">
-          Food Bill : <input type="number" class="foodBill">
+          Food Bill : <input type="number" class="foodBill" placeholder="Food Bill">
          </p>
          <p class="containerDetails">
-          House Rent : <input type="number" class="houseBill">
+          House Rent : <input type="number" class="houseBill" placeholder="House Rent">
          </p>
          <p class="containerDetails">
-          Number of Days(Month) : <input type="number" class="noOfMonth">
+          Days(Month) : <input type="number" class="noOfMonth" placeholder="No of Days">
          </p>
          <button class="saveExBtn">Save</button>
+         <div class="secondSectionSaveText">
+          <p class="secondSectionSaveTextDetails">Data Saved</p>
+          <div class="close-icon2">&times;</div>
+         </div>
       </div>
       <div class="expense-search">
         <h3 class="heading">Search Your Expenses Details By Name</h3>

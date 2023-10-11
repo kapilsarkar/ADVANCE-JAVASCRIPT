@@ -33,14 +33,17 @@ body{
 .fullName{
     margin-left: 10px;
     font-size: 18px;
+    padding: 2px 3px;
 }
 .contactNo{
     font-size: 18px;
     margin-left: 3px;
+    padding: 2px 3px;
 }
 .email{
     font-size: 18px;
     margin-left: 18px;
+    padding: 2px 3px;
 }
 .container-search{
     width: 50%;
@@ -142,6 +145,32 @@ body{
     font-size: 12px;
     font-weight: 700;
 }
+.secondSectionSaveText{
+    width: 70px;
+    height: 70px;
+    background-color: #FFEB3B;
+    border-radius: 16px;
+    position: absolute;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+    padding: 9px;
+    transform: scale(0);
+    color: #0d5c0d;
+    transition: transform 0.2s ease-in-out;
+}
+.secondSectionSaveText.open{
+    transform: scale(1);
+}
+.secondSectionSaveTextDetails{
+    font-size: 12px;
+    font-weight: 700;
+}
+.close-icon2{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    right: 16px;
+    cursor: pointer;
+}
 .second-section{
     display: flex;
 }
@@ -159,6 +188,15 @@ body{
     padding: 5px 7px;
 }
 .searchExBtn{
+    background-color: green;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 7px;
+    border-radius: 5px;
+    width: 20%;
+    cursor: pointer;
+}
+.saveExBtn{
     background-color: green;
     color: #fff;
     font-size: 1rem;
@@ -224,6 +262,29 @@ body{
     border-radius: 5px;
     display: none; 
 }
+.expensesInputName{
+    margin-left: 42px;
+    font-size: 18px;
+    padding: 2px 3px;
+}
+.electricBill{
+    margin-left: 52px;
+    font-size: 18px; 
+    padding: 2px 3px;
+}
+.foodBill{
+    margin-left: 26px;
+    font-size: 18px;
+    padding: 2px 3px;
+}
+.houseBill{
+    font-size: 18px;
+    padding: 2px 3px;
+}
+.noOfMonth{
+    font-size: 18px;
+    padding: 2px 3px;
+}
 @media (max-width:960px) {
     .first-Section{
         flex-direction: column;
@@ -237,12 +298,30 @@ body{
     .container-search{
         width: 70%;
     }
+    .second-section{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
-
+@media (max-width:730px){
+    .expensesInputName{
+        margin-left: 2px;
+        
+    }
+    .electricBill{
+        margin-left: 2px;
+    }
+}
 @media (max-width:600px){
     .btnSave{
         padding: 3px 6px;
         font-size: 0.9rem;
+    }
+    .saveExBtn{
+        padding: 3px 5px;
+        font-size: 0.6rem;
     }
     .searchBtn{
         padding: 3px 6px;
@@ -263,5 +342,94 @@ body{
     }
     .searchName{
         font-size: 15px;
+    }
+    .searchExBtn{
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+    .clearExSearchBtn{
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+    .expensesInputName{
+        font-size: 15px;
+    }
+    .electricBill{
+        font-size: 15px;
+    }
+    .foodBill{
+        font-size: 15px;
+        margin-left: 1px;
+    }
+    .houseBill{
+        font-size: 15px;
+    }
+    .noOfMonth{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:420px){
+    .searchBtn{
+        padding: 2px 5px;
+        font-size: 0.6rem;
+    }
+    .clearSearchBtn{
+        padding: 2px 5px;
+        font-size: 0.6rem;
+    }
+    .searchExBtn{
+        padding: 2px 5px;
+        font-size: 0.6rem;
+    }
+    .clearExSearchBtn{
+        padding: 2px 5px;
+        font-size: 0.6rem;
+    }
+    .expensesInputName{
+        margin-left: 1px;
+    }
+    .electricBill{
+        margin-left: 1px;
+    }
+    .foodBill{
+        margin-left: 1px;
+    }
+}
+
+@media(max-width:380px){
+    .expensesInputName{
+        font-size: 12px;
+    }
+    .electricBill{
+        font-size: 12px;
+    }
+    .foodBill{
+        font-size: 12px;
+        margin-left: 1px;
+    }
+    .houseBill{
+        font-size: 12px;
+    }
+    .noOfMonth{
+        font-size: 12px;
+    }
+}
+@media(max-width:320px){
+    .expensesInputName{
+        font-size: 10px;
+    }
+    .electricBill{
+        font-size: 10px;
+    }
+    .foodBill{
+        font-size: 10px;
+        margin-left: 1px;
+    }
+    .houseBill{
+        font-size: 10px;
+    }
+    .noOfMonth{
+        font-size: 10px;
     }
 }
