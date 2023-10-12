@@ -306,16 +306,14 @@ body{
         justify-content: center;
         align-items: center;
     }
-}
-@media (max-width:730px){
-    .expensesInputName{
-        margin-left: 2px;
-        
+    .expense-section{
+        width: 70%;
     }
-    .electricBill{
-        margin-left: 2px;
+    .expense-search{
+        width: 70%;
     }
 }
+
 @media (max-width:600px){
     .btnSave{
         padding: 3px 6px;
@@ -353,7 +351,7 @@ body{
         padding: 3px 6px;
         font-size: 0.9rem;
     }
-    .expensesInputName{
+    /* .expensesInputName{
         font-size: 15px;
     }
     .electricBill{
@@ -368,7 +366,7 @@ body{
     }
     .noOfMonth{
         font-size: 15px;
-    }
+    } */
 }
 
 @media (max-width:420px){
@@ -399,7 +397,7 @@ body{
     }
 }
 
-@media(max-width:380px){
+/* @media(max-width:380px){
     .expensesInputName{
         font-size: 12px;
     }
@@ -416,7 +414,7 @@ body{
     .noOfMonth{
         font-size: 12px;
     }
-}
+} */
 @media(max-width:320px){
     .expensesInputName{
         font-size: 10px;
