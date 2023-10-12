@@ -2,4 +2,4 @@
 
 ## USER CAN ADD UPDATE DELETE TASK
 
-[LIVE LINK]()
+[LIVE LINK](https://todoappkapil.netlify.app/)

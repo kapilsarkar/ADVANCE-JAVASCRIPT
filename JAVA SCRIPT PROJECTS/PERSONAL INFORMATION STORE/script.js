@@ -47,13 +47,14 @@ const clearSearchBtn = document.querySelector(".clearSearchBtn");
 const searchBtn = document.querySelector(".searchBtn");
 
 searchBtn.addEventListener("click", (e) => {
-  const search = myData.filter((sr) => {
+  myData.filter((sr) => {
     if (sr.fullName === searchBoxInput.value) {
       searchDetails.style.display = "block";
       searchDetails.innerText = `Your Contact Number is : ${sr.contactNo}`;
       searchEmail.style.display = "block";
       searchEmail.innerText = `Your Email Id is : ${sr.email} `;
     }
+   
   });
 });
 //CODE FOR CLEARING SEARCH DETAILS OF PERSONAL DATA---

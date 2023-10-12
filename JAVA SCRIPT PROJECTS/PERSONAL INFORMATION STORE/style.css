@@ -130,6 +130,7 @@ body{
     transform: scale(0);
     color: #0d5c0d;
     transition: transform 0.2s ease-in-out;
+    margin-inline: inherit;
 }
 .containerSaveText.open{
     transform: scale(1);
@@ -156,6 +157,7 @@ body{
     transform: scale(0);
     color: #0d5c0d;
     transition: transform 0.2s ease-in-out;
+    margin-inline: inherit;
 }
 .secondSectionSaveText.open{
     transform: scale(1);
