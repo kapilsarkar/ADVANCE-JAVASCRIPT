@@ -8,6 +8,16 @@ body{
     background-color: #232323;
     color: #fff;
 }
+#head-icon{
+    color: #fff;
+    font-size: 30px;
+    padding: 1rem;
+}
+#head-icon2{
+    color: #fff;
+    font-size: 30px;
+    padding: 1rem;
+}
 .main-head{
     text-align: center;
    background-color: rgb(154, 10, 10);
@@ -367,6 +377,18 @@ body{
     .noOfMonth{
         font-size: 15px;
     } */
+}
+
+@media(max-width:535px){
+    .expensesInputName{
+        margin-left: 1px;
+    }
+    .electricBill{
+        margin-left: 1px;
+    }
+    .foodBill{
+        margin-left: 1px;
+    }
 }
 
 @media (max-width:420px){

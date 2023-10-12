@@ -4,15 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Details App</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+    integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <h2 class="main-head">Personal Details App</h2>
+    <h2 class="main-head"><i class="fa-solid fa-person-chalkboard" id="head-icon"></i>Personal Details App<i class="fa-solid fa-person-circle-check" id="head-icon2"></i></h2>
     <section class="first-Section">
      
       <div class="container">
-        <h3 class="heading">Enter Details</h3>
+        <h2 class="heading"><i class="fa-solid fa-person-circle-plus" style="padding: 1rem;"></i>Enter Details</h2>
 
         <p class="containerDetails">
           Full Name : <input type="text" class="fullName" placeholder="Enter Full Name" />
@@ -35,7 +49,7 @@
       </div>
 
       <div class="container-search">
-        <h3 class="heading">Search Details By Full Name</h3>
+        <h2 class="heading"><i class="fa-solid fa-person-circle-exclamation" style="padding: 1rem;"></i>Search Details By Full Name</h2>
         <input type="text" class="searchName" placeholder="Enter Full Name" />
         <button class="searchBtn">Search</button>
         <button class="clearSearchBtn">Clear</button>
@@ -46,7 +60,7 @@
 
     <section class="second-section">
       <div class="expense-section">
-        <h3 class="heading">Enter Your Expenses Details</h3>
+        <h2 class="heading"><i class="fa-solid fa-person-circle-plus" style="padding: 1rem;"></i>Enter Your Expenses Details</h2>
          <p class="containerDetails">
           Name : <input type="text" class="expensesInputName" placeholder="Enter Full Name">
          </p>
@@ -69,7 +83,7 @@
          </div>
       </div>
       <div class="expense-search">
-        <h3 class="heading">Search Your Expenses Details By Name</h3>
+        <h2 class="heading"><i class="fa-solid fa-person-circle-exclamation" style="padding: 1rem;"></i>Search Your Expenses Details By Name</h2>
         <input type="text" class="searchExName" placeholder="Enter Full Name" />
         <button class="searchExBtn">Search</button>
         <button class="clearExSearchBtn">Clear</button>
