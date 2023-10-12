@@ -1,5 +1,5 @@
 
-![IMG](https://img.shields.io/badge/JAVASCRIPT----REPOSITORY---
+![IMG](https://img.shields.io/badge/JAVASCRIPT%20REPOSITORY%20---%23ED1C24
 )
 
 ![IMG1](https://img.shields.io/badge/JAVASCRIPT---%20IMPORTANT%20TOPICS%20---GREEN)
@@ -21,7 +21,7 @@
 :file_folder:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
 
 
-![IMG4](https://img.shields.io/badge/IMPORTANT%20PROJECTS%20-%20%20BLUE
+![IMG4](https://img.shields.io/badge/IMPORTANT%20PROJECTS%20---%23FF5733
 )
 
 1. `TODO LIST`:open_file_folder: [FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/TO%20DO%20LIST):red_circle:  [LIVE LINK](https://todoappkapil.netlify.app/)
