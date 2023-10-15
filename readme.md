@@ -2,18 +2,15 @@
 ![IMG](https://img.shields.io/badge/JAVASCRIPT%20REPOSITORY%20---%23ED1C24
 )
 
-![IMG1](https://img.shields.io/badge/JAVASCRIPT---%20IMPORTANT%20TOPICS%20---GREEN)
-  :file_folder:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/ADVANCE%20JAVASCRIPT-CONCEPTS)
+![IMG1](https://img.shields.io/badge/JAVASCRIPT---%20IMPORTANT%20TOPICS%20---GREEN):file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/ADVANCE%20JAVASCRIPT-CONCEPTS)
 
 
 ![IMG2](https://img.shields.io/badge/JAVASCRIPT%20---REVISION%20---%20RED
-)
-  :file_folder:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20REVISION)
+):file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20REVISION)
 
 
 ![IMG3](https://img.shields.io/badge/JAVSCRIPT%20---%20PROJECTS%20---
-)
-  :file_folder:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
+):file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
 
 
 ![IMG4](https://img.shields.io/badge/IMPORTANT%20PROJECTS%20---%23FF5733
