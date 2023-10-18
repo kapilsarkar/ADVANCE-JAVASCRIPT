@@ -1,8 +1,26 @@
-const user = {
-    "userId": 1,
-    "id": 1,
-    "title": "delectus aut autem",
-    "completed": false
-    }
+const image = document.querySelector("img");
+const button = document.querySelector("button");
 
-    console.log(user)
+button.addEventListener("click", () => {
+  fetch("https://dog.ceo/api/breeds/image/random ")
+    .then((response) => response.json())
+    .then((json) => {
+      image.src = json.message;
+    });
+});
+
+// setInterval(() => {
+//   fetch("https://dog.ceo/api/breeds/image/random ")
+//     .then((response) => response.json())
+//     .then((json) => {
+//       image.src = json.message;
+//     });
+// }, 1000);
+
+// setTimeout(() => {
+//       fetch("https://dog.ceo/api/breeds/image/random ")
+//     .then((response) => response.json())
+//      .then((json) => {
+//        image.src = json.message;
+//      }); 
+// }, 1000);
