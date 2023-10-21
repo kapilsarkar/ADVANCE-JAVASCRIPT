@@ -3,7 +3,7 @@ const image = document.querySelector("img");
 
 button.addEventListener("click", () => {
     const xhr = new XMLHttpRequest();
-  
+    console.log(xhr.response)
     xhr.responseType = "json";
     xhr.addEventListener("load", () => {
       image.src = xhr.response.message;
