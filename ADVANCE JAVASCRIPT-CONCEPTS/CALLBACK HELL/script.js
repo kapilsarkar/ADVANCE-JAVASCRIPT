@@ -6,15 +6,15 @@ setTimeout(function () {
 
 console.log("Season2");
 
-const cart = ["shoes", "pants", "kurta"];
+// const cart = ["shoes", "pants", "kurta"];
 
-api.createOrder(cart, function () {
-  api.proceedToPayment(function () {
-    api.showOrderSummary(function () {
-      api.UpdateWallet();
-    });
-  });
-});
+// api.createOrder(cart, function () {
+//   api.proceedToPayment(function () {
+//     api.showOrderSummary(function () {
+//       api.UpdateWallet();
+//     });
+//   });
+// });
 
 
 const xhr = new XMLHttpRequest()
