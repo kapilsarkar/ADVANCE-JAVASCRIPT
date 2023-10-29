@@ -1,0 +1,24 @@
+body{
+    background-color: rgba(0, 0, 0, 0.927);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.xml{
+    background-color: blueviolet;
+    width: 50%;
+    padding: 3rem;
+    border: 2px solid #fff;
+    border-radius: 1rem;
+}
+
+.BtnClick{
+    background-color: rgb(29, 149, 29);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+.showData{
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+}
