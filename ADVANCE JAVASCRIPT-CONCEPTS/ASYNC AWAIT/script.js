@@ -1,5 +1,20 @@
-async function makeRequest() {
-    return "Hello"
+async function makeAsyncRequest() {
+  const url =
+  "https://dummyjson.com/products/search?q=phone";
+  const response = await fetch(url);
+  const data = await response.json()
+  //console.log(response)
+  //console.log(data)
+  //console.log('Kapil')
+  return data
+ 
+
 }
 
-makeRequest();
+makeAsyncRequest().then((data)=>{
+    console.log(data)
+})
+
+
+
+
