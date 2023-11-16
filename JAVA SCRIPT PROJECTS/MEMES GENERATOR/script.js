@@ -1,0 +1,1 @@
+const url = "https://meme-api.com/gimme/wholesomememes"
