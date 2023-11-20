@@ -1860,4 +1860,8 @@ const usersData = [
     },
   ]
   const myName = "Kapil Sarkar"
+
+  export function getFirstUser(){
+    return usersData[0]
+  }
   export {usersData,myName}
