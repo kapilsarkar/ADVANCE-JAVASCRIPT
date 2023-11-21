@@ -1,0 +1,32 @@
+body{
+    background-color: #232323;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 300px;
+    margin-inline: auto;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+
+}
+.searchBox{
+    font-size: 10px;
+    padding: 5px 10px;
+}
+.searchBtn{
+    font-size: 1rem;
+    padding: 5px 7px;
+    background-color: rgb(225, 18, 191);
+    color: #fff;
+    font-family: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+}
