@@ -7,3 +7,26 @@ body{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+.searchHead{
+    text-align: center;
+}
+.seachContainer{
+    max-width: 360px;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    margin-inline: auto;
+    padding: 5px 10px;
+}
+#productsSelect{
+   font-size: 1.2rem;
+   padding: 3px 6px; 
+   cursor: pointer;
+}
+.SearchBtn{
+    font-size: 1.2rem;
+    padding: 3px 7px;
+    background-color: rgb(4, 117, 4);
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
