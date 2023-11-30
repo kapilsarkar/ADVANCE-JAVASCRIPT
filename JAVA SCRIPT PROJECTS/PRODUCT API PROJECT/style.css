@@ -3,30 +3,44 @@
 }
 
 body{
-    background-color: #232323;
+    background-color: #e5ff74;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-.searchHead{
-    text-align: center;
-}
-.seachContainer{
-    max-width: 360px;
-    border: 1px solid #fff;
-    border-radius: 1rem;
-    margin-inline: auto;
+
+.menHead{
+    margin-top: 1rem;
+    background-color: rgb(221 20 46);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
     padding: 5px 10px;
-}
-#productsSelect{
-   font-size: 1.2rem;
-   padding: 3px 6px; 
-   cursor: pointer;
-}
-.SearchBtn{
-    font-size: 1.2rem;
-    padding: 3px 7px;
-    background-color: rgb(4, 117, 4);
-    border-radius: 3px;
+    text-align: center;
     color: #fff;
-    cursor: pointer;
+}
+.men-part1{
+    width: 36%;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgb(235, 16, 59);
+    color: #fff;
+}
+.mens-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.men-part1Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.men-part1Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.men-Part1Price{
+    font-weight: 900;
+    font-size: 24px;
 }
