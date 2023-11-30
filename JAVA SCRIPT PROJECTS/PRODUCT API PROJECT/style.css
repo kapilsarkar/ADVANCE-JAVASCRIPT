@@ -1,13 +1,36 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 body{
     background-color: #e5ff74;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+#cart{
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    font-size: 24px;
+    margin-top: -25px;
+}
+.navBar{
+    background-color: #8e1aa0;
+    padding: 15px 10px;
+}
+.navMenu{
+    display: flex;
+    padding: 3px 10px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.navMenu li{
+    font-size: 18px;
+    font-weight: 900;
+}
 .menHead{
     margin-top: 1rem;
     background-color: rgb(221 20 46);
@@ -18,7 +41,15 @@ body{
     color: #fff;
 }
 .men-part1{
-    width: 36%;
+    width: 42%;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgb(235, 16, 59);
+    color: #fff;
+}
+.men-part2{
+    width: 42%;
     border: 1px solid #fff;
     border-radius: 1.2rem;
     padding: 5px 10px;
@@ -30,8 +61,14 @@ body{
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    margin-top: 2.3rem;
 }
 .men-part1Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.men-part2Img{
     width: 56%;
     padding: 3px 6px;
     display: flex;
@@ -40,7 +77,76 @@ body{
     font-weight: 600;
     font-size: 14px;
 }
+.men-part2Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.men-part1Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.men-part2Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 .men-Part1Price{
     font-weight: 900;
     font-size: 24px;
+}
+.men-Part2Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.men-part1Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+.men-part2Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    margin-top: 2rem;
+}
+
+@media(max-width:720px){
+    .mens-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .men-part1{
+        width: 70%;
+    }
+    .men-part2{
+        width: 70%;
+    }
+}
+@media(max-width:330px){
+    .men-part1Btn{
+        padding: 10px 20px;
+    }
+    .men-part2Btn{
+        padding: 10px 20px;
+    }
+    
 }
