@@ -5,17 +5,16 @@ const mensDesc1 = document.querySelector(".men-part1Desc");
 const mensTitle1 = document.querySelector(".men-part1Title");
 const menPrice1 = document.querySelector(".men-Part1Price");
 
-const humBurgerMenu = document.querySelector(".humburger-icon") 
-const sideBar = document.querySelector(".sideBar")
-const hideSideBar = document.querySelector(".hideSideBar");
-humBurgerMenu.addEventListener("click",()=>{
- sideBar.style.display = "flex"
-})
+const humbergerFullMenu = document.querySelector(".humbergerFullMenu");
+const humburgerIcon = document.querySelector(".humburger-icon") ;
+const closeIcon = document.querySelector(".closeIcon");
 
-hideSideBar.addEventListener("click",()=>{
-  sideBar.style.display = "none"
+humburgerIcon.addEventListener("click",()=>{
+  humbergerFullMenu.style.display = "block";
 })
-
+closeIcon.addEventListener("click",()=>{
+  humbergerFullMenu.style.display = "none";
+})
 //Function For Mens Category Part1 Starts
 async function mensDisplayPart1() {
   try {
@@ -46,7 +45,7 @@ async function mensDisplayPart1() {
     console.log(err);
   }
 }
-//mensDisplayPart1();
+mensDisplayPart1();
 //Function For Mens Category Part1 Ends
 const mensImg2 = document.querySelector(".men-part2Img");
 const mensDesc2 = document.querySelector(".men-part2Desc");
@@ -80,4 +79,4 @@ async function mensDisplayPart2() {
   }
 }
 //Function For Mens Category Part1 Ends
-//mensDisplayPart2();
+mensDisplayPart2();
