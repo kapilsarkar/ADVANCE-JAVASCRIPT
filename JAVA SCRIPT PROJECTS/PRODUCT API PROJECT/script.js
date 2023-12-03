@@ -6,15 +6,15 @@ const mensTitle1 = document.querySelector(".men-part1Title");
 const menPrice1 = document.querySelector(".men-Part1Price");
 
 const humbergerFullMenu = document.querySelector(".humbergerFullMenu");
-const humburgerIcon = document.querySelector(".humburger-icon") ;
+const humburgerIcon = document.querySelector(".humburger-icon");
 const closeIcon = document.querySelector(".closeIcon");
 
-humburgerIcon.addEventListener("click",()=>{
+humburgerIcon.addEventListener("click", () => {
   humbergerFullMenu.style.display = "block";
-})
-closeIcon.addEventListener("click",()=>{
+});
+closeIcon.addEventListener("click", () => {
   humbergerFullMenu.style.display = "none";
-})
+});
 //Function For Mens Category Part1 Starts
 async function mensDisplayPart1() {
   try {
@@ -80,3 +80,34 @@ async function mensDisplayPart2() {
 }
 //Function For Mens Category Part1 Ends
 mensDisplayPart2();
+const cartNumber = document.querySelector(".cartNumber");
+
+const menPart1Btn = document.querySelector(".men-part1Btn");
+let num = 1;
+const menPart1BtnRemove = document.querySelector(".men-part1BtnRemove");
+menPart1Btn.addEventListener("click", () => {
+  
+  cartNumber.innerText = num++;
+  menPart1Btn.innerText = "Item Added";
+  menPart1Btn.disabled = "true";
+  menPart1BtnRemove.style.display ="block"
+  
+});
+
+menPart1BtnRemove.addEventListener("click",()=>{
+  menPart1Btn.innerText = "Add To Cart";
+  cartNumber.innerText = num--;
+  menPart1Btn.disabled = "false";
+  menPart1BtnRemove.style.display ="none"
+})
+
+
+
+const menuPart2Btn = document.querySelector(".men-part2Btn");
+
+menuPart2Btn.addEventListener("click", () => {
+  cartNumber.innerText = num++;
+  menuPart2Btn.innerText = "Item Added";
+  menuPart2Btn.disabled = "true";
+ 
+});

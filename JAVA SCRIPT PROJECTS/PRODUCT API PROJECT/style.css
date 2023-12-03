@@ -19,7 +19,7 @@ body{
     position: relative;
     left: -20px;
     z-index: 999;
-    
+    cursor: pointer;
 }
 .navBar{
     background-color: #8e1aa0;
@@ -145,7 +145,7 @@ body{
 .humbuger-menu{
     /* display: flex;
     flex-direction: row-reverse; */
-    transition: right 0.25s cubic-bezier(1, -0.41, 0.36, 1);
+    transition: right 0.25s ease-in-out;
 }
 .humburgerList{
     list-style: none;
@@ -165,6 +165,22 @@ body{
     cursor: pointer;
 }
 .humbergerFullMenu{
+    display: none;
+}
+.cartNumber{
+    padding-left: 5px;
+}
+
+.men-part1BtnRemove{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
     display: none;
 }
 @media(max-width:720px){

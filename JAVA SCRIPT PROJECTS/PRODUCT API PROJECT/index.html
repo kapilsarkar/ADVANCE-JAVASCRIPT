@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products Api Project</title>
-    <script src="./script.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -31,7 +31,7 @@
         <li>ELECTRONICS</li>
         <li>WOMEN'S</li>
       </ul>
-      <i class="fa-solid fa-cart-arrow-down" id="cart"></i>
+    <i class="fa-solid fa-cart-arrow-down" id="cart"><span class="cartNumber"></span></i></a> 
       <div class="humbugerIconBar">
         <p class="humburger-icon">&#9776;</p>
       </div>
@@ -48,6 +48,7 @@
         </div>
       </div>
     </section>
+      <!-- Nav Bar Ends -->
     <!-- Men's Section -->
     <section class="mens">
       <h1 class="menHead">
@@ -64,6 +65,7 @@
           <p class="men-part1Title"></p>
           <h3 class="men-Part1Price"></h3>
           <button class="men-part1Btn">Add To Cart</button>
+          <button class="men-part1BtnRemove">Remove Item</button>
         </div>
         <div class="men-part2">
           <img src="" alt="img1-mens" class="men-part2Img" />
