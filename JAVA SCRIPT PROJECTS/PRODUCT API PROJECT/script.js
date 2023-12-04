@@ -84,22 +84,25 @@ const cartNumber = document.querySelector(".cartNumber");
 
 const menPart1Btn = document.querySelector(".men-part1Btn");
 let num = 1;
-const menPart1BtnRemove = document.querySelector(".men-part1BtnRemove");
+
+const mensData = JSON.parse(localStorage.getItem("mensData")) || []
+
+const addMensData = (id,title,price)=>{
+  mensData.push((id,title,price))
+}
+
+localStorage.setItem("mensData",JSON.stringify(mensData))
+
 menPart1Btn.addEventListener("click", () => {
   
   cartNumber.innerText = num++;
   menPart1Btn.innerText = "Item Added";
   menPart1Btn.disabled = "true";
-  menPart1BtnRemove.style.display ="block"
+  
   
 });
 
-menPart1BtnRemove.addEventListener("click",()=>{
-  menPart1Btn.innerText = "Add To Cart";
-  cartNumber.innerText = num--;
-  menPart1Btn.disabled = "false";
-  menPart1BtnRemove.style.display ="none"
-})
+
 
 
 

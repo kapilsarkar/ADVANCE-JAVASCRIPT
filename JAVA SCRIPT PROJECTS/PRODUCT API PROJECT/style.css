@@ -171,18 +171,7 @@ body{
     padding-left: 5px;
 }
 
-.men-part1BtnRemove{
-    padding: 10px 50px;
-    font-size: 14px;
-    font-weight: 900;
-    background-color: #00c81c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 1.2rem;
-    display: none;
-}
+
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;
