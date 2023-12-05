@@ -87,18 +87,21 @@ let num = 1;
 
 const mensData = JSON.parse(localStorage.getItem("mensData")) || []
 
-const addMensData = (id,title,price)=>{
-  mensData.push((id,title,price))
+const addMensData = (title,price)=>{
+  mensData.push({title,price})
+  localStorage.setItem("mensData",JSON.stringify(mensData))
+
+  return title ,price
 }
 
-localStorage.setItem("mensData",JSON.stringify(mensData))
+
 
 menPart1Btn.addEventListener("click", () => {
   
   cartNumber.innerText = num++;
   menPart1Btn.innerText = "Item Added";
   menPart1Btn.disabled = "true";
-  
+  addMensData(mensTitle1.innerText,menPrice1.innerText)
   
 });
 
@@ -112,5 +115,12 @@ menuPart2Btn.addEventListener("click", () => {
   cartNumber.innerText = num++;
   menuPart2Btn.innerText = "Item Added";
   menuPart2Btn.disabled = "true";
+  addMensData(mensTitle2.innerText,menPrice2.innerText)
  
 });
+
+const cartTotalValue = document.querySelector("#cart");
+
+cartTotalValue.addEventListener("click",()=>{
+  
+})
