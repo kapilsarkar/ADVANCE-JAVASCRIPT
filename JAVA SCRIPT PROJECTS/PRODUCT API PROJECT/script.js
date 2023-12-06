@@ -54,6 +54,7 @@ const mensImg2 = document.querySelector(".men-part2Img");
 const mensDesc2 = document.querySelector(".men-part2Desc");
 const mensTitle2 = document.querySelector(".men-part2Title");
 const menPrice2 = document.querySelector(".men-Part2Price");
+const mensCloth2 = document.querySelector(".mens-part2Category")
 //Function For Mens Category Part2 Starts
 async function mensDisplayPart2() {
   try {
@@ -71,7 +72,7 @@ async function mensDisplayPart2() {
     });
     mensCategoryPart2.map((e) => {
       const men2id = e.id;
-      mensCloth.innerHTML = `Category : ${e.category}`
+      mensCloth2.innerHTML = `Category : ${e.category}`
       mensDesc2.innerHTML = e.description;
       mensImg2.src = e.image;
       mensTitle2.innerText = e.title;
@@ -104,7 +105,7 @@ menPart1Btn.addEventListener("click", () => {
   cartNumber.innerText = num++;
   menPart1Btn.innerText = "Item Added";
   menPart1Btn.disabled = "true";
-  addMensData(mensTitle1.innerText,menPrice1.innerText)
+  addMensData(mensCloth.innerText,mensTitle1.innerText,menPrice1.innerText)
   
 });
 
@@ -118,7 +119,7 @@ menuPart2Btn.addEventListener("click", () => {
   cartNumber.innerText = num++;
   menuPart2Btn.innerText = "Item Added";
   menuPart2Btn.disabled = "true";
-  addMensData(mensTitle2.innerText,menPrice2.innerText)
+  addMensData(mensCloth2.innerText,mensTitle2.innerText,menPrice2.innerText)
  
 });
 

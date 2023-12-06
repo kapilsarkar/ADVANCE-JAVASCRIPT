@@ -177,6 +177,12 @@ body{
     text-transform: uppercase;
     color: #e5ff74;
 }
+.mens-part2Category{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #e5ff74;
+}
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;
