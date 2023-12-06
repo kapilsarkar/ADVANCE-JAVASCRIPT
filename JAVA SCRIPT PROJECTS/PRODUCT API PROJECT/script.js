@@ -4,6 +4,7 @@ const mensImg1 = document.querySelector(".men-part1Img");
 const mensDesc1 = document.querySelector(".men-part1Desc");
 const mensTitle1 = document.querySelector(".men-part1Title");
 const menPrice1 = document.querySelector(".men-Part1Price");
+const mensCloth = document.querySelector(".mens-partCategory");
 
 const humbergerFullMenu = document.querySelector(".humbergerFullMenu");
 const humburgerIcon = document.querySelector(".humburger-icon");
@@ -35,10 +36,12 @@ async function mensDisplayPart1() {
     });
     mensCategoryPart1.map((e) => {
       const men1id = e.id;
+      mensCloth.innerHTML = `Category : ${e.category}`
       mensDesc1.innerHTML = e.description;
       mensImg1.src = e.image;
       mensTitle1.innerText = e.title;
       menPrice1.innerText = `₹${e.price}`;
+     
     });
     console.log(mensCategoryPart1);
   } catch (err) {
@@ -51,7 +54,6 @@ const mensImg2 = document.querySelector(".men-part2Img");
 const mensDesc2 = document.querySelector(".men-part2Desc");
 const mensTitle2 = document.querySelector(".men-part2Title");
 const menPrice2 = document.querySelector(".men-Part2Price");
-
 //Function For Mens Category Part2 Starts
 async function mensDisplayPart2() {
   try {
@@ -69,6 +71,7 @@ async function mensDisplayPart2() {
     });
     mensCategoryPart2.map((e) => {
       const men2id = e.id;
+      mensCloth.innerHTML = `Category : ${e.category}`
       mensDesc2.innerHTML = e.description;
       mensImg2.src = e.image;
       mensTitle2.innerText = e.title;
