@@ -145,7 +145,7 @@ body{
 .humbuger-menu{
     /* display: flex;
     flex-direction: row-reverse; */
-    transition: right 0.25s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 .humburgerList{
     list-style: none;
@@ -183,6 +183,50 @@ body{
     text-transform: uppercase;
     color: #e5ff74;
 }
+.popup{
+    max-width: 632px;
+    height: 360px;
+    background-color: #fff;
+    color: rgb(227, 17, 17);
+    border-radius: 16px;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    box-shadow: 0 5px 4px 2px rgba(0, 0, 0, 0.3);
+    padding: 9px;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+    overflow-y: scroll;
+    /* display: none; */
+}
+.popup.open{
+    /* display: block; */
+    transform: scale(1);
+  }
+  .close-PopUp{
+      font-size: 48px;
+      font-weight: 700;
+      position: absolute;
+      right: 16px;
+      cursor: pointer;
+      
+  }
+  .allTitle{
+    text-align: left;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  .allPrice{
+    text-align: center;
+    font-weight: 900;
+    color: #127509;
+    padding: 1rem;
+  }
+  .DbImg{
+    width: 10%;
+    margin-top: -3rem;
+    padding: 1.2rem;
+  }
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;

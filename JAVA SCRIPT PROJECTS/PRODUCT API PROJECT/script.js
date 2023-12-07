@@ -16,6 +16,8 @@ humburgerIcon.addEventListener("click", () => {
 closeIcon.addEventListener("click", () => {
   humbergerFullMenu.style.display = "none";
 });
+
+
 //Function For Mens Category Part1 Starts
 async function mensDisplayPart1() {
   try {
@@ -36,7 +38,7 @@ async function mensDisplayPart1() {
     });
     mensCategoryPart1.map((e) => {
       const men1id = e.id;
-      mensCloth.innerHTML = `Category : ${e.category}`
+      mensCloth.innerHTML = e.category
       mensDesc1.innerHTML = e.description;
       mensImg1.src = e.image;
       mensTitle1.innerText = e.title;
@@ -48,6 +50,8 @@ async function mensDisplayPart1() {
     console.log(err);
   }
 }
+
+
 mensDisplayPart1();
 //Function For Mens Category Part1 Ends
 const mensImg2 = document.querySelector(".men-part2Img");
@@ -72,7 +76,7 @@ async function mensDisplayPart2() {
     });
     mensCategoryPart2.map((e) => {
       const men2id = e.id;
-      mensCloth2.innerHTML = `Category : ${e.category}`
+      mensCloth2.innerHTML = e.category
       mensDesc2.innerHTML = e.description;
       mensImg2.src = e.image;
       mensTitle2.innerText = e.title;
@@ -89,13 +93,13 @@ const cartNumber = document.querySelector(".cartNumber");
 const menPart1Btn = document.querySelector(".men-part1Btn");
 let num = 1;
 
-const mensData = JSON.parse(localStorage.getItem("mensData")) || []
+const myData = JSON.parse(localStorage.getItem("myData")) || []
 
-const addMensData = (title,price)=>{
-  mensData.push({title,price})
-  localStorage.setItem("mensData",JSON.stringify(mensData))
+const addData = (category,title,price,image)=>{
+  myData.push({category,title,price,image})
+  localStorage.setItem("myData",JSON.stringify(myData))
 
-  return title ,price
+  return category, title ,price,image
 }
 
 
@@ -105,7 +109,7 @@ menPart1Btn.addEventListener("click", () => {
   cartNumber.innerText = num++;
   menPart1Btn.innerText = "Item Added";
   menPart1Btn.disabled = "true";
-  addMensData(mensCloth.innerText,mensTitle1.innerText,menPrice1.innerText)
+  addData(mensCloth.innerText,mensTitle1.innerText,menPrice1.innerText,mensImg1.src)
   
 });
 
@@ -119,12 +123,46 @@ menuPart2Btn.addEventListener("click", () => {
   cartNumber.innerText = num++;
   menuPart2Btn.innerText = "Item Added";
   menuPart2Btn.disabled = "true";
-  addMensData(mensCloth2.innerText,mensTitle2.innerText,menPrice2.innerText)
+  addData(mensCloth2.innerText,mensTitle2.innerText,menPrice2.innerText,mensImg2.src)
  
 });
 
 const cartTotalValue = document.querySelector("#cart");
+// code for popup
 
-cartTotalValue.addEventListener("click",()=>{
-  
+const popup = document.querySelector(".popup");
+const closePopUp = document.querySelector(".close-PopUp");
+
+
+cartTotalValue.addEventListener("click",(e)=>{
+  myData.map((m)=>{
+     const allTitle = document.createElement("p");
+     allTitle.classList.add("allTitle")
+     console.log(allTitle.innerText= m.title)
+     allTitle.innerHTML = `Product Name : ${ m.title}`
+     popup.appendChild(allTitle)
+     const allPrice = document.createElement("p")
+     allPrice.classList.add("allPrice")
+     allPrice.innerText = `Price : ${m.price}`
+     popup.appendChild(allPrice)
+     const DbImg = document.createElement("img")
+     DbImg.classList.add("DbImg")
+     DbImg.src = m.image
+     popup.appendChild(DbImg)
+     
+  })
+  let totalPrice = document.createElement("h2")
+     tPrice = myData.reduce((acc,item)=>{
+      return  acc + item.price
+     },0)
+    console.log(totalPrice.innerText = tPrice )
+    popup.appendChild(totalPrice)
+ 
+ 
+  popup.classList.add("open")
 })
+
+closePopUp.addEventListener("click",()=>{
+  popup.classList.remove("open")
+})
+
