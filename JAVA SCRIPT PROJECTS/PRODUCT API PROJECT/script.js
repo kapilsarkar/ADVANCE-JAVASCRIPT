@@ -42,7 +42,7 @@ async function mensDisplayPart1() {
       mensDesc1.innerHTML = e.description;
       mensImg1.src = e.image;
       mensTitle1.innerText = e.title;
-      menPrice1.innerText = `₹${e.price}`;
+      menPrice1.innerText = `${e.price}`;
      
     });
     console.log(mensCategoryPart1);
@@ -80,7 +80,7 @@ async function mensDisplayPart2() {
       mensDesc2.innerHTML = e.description;
       mensImg2.src = e.image;
       mensTitle2.innerText = e.title;
-      menPrice2.innerText = `₹${e.price}`;
+      menPrice2.innerText = `${e.price}`;
     });
   } catch (err) {
     console.log(err);
@@ -152,13 +152,21 @@ cartTotalValue.addEventListener("click",(e)=>{
      
   })
   let totalPrice = document.createElement("h2")
-     tPrice = myData.reduce((acc,item)=>{
-      return  acc + item.price
-     },0)
-    console.log(totalPrice.innerText = tPrice )
+  totalPrice.classList.add("totalPrice")
+
+    let tPrice = myData.reduce((acc,item)=>{
+            return acc + parseFloat(item.price)
+    },0)
+   
+    totalPrice.innerText =`Total Price:₹ ${tPrice}`
     popup.appendChild(totalPrice)
- 
- 
+    const popUpBtnDiv = document.createElement("div")
+    const popTotalBtn = document.createElement("button")
+    popTotalBtn.innerText = "Confirm Order"
+    popTotalBtn.classList.add("popTotalBtn")
+    popUpBtnDiv.classList.add("popUpBtnDiv")
+    popUpBtnDiv.appendChild(popTotalBtn)
+    popup.appendChild(popUpBtnDiv)
   popup.classList.add("open")
 })
 
@@ -166,3 +174,4 @@ closePopUp.addEventListener("click",()=>{
   popup.classList.remove("open")
 })
 
+//₹

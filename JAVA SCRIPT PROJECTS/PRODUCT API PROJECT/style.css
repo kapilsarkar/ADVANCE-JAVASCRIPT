@@ -223,9 +223,32 @@ body{
     padding: 1rem;
   }
   .DbImg{
-    width: 10%;
+    width: 15%;
     margin-top: -3rem;
     padding: 1.2rem;
+  }
+  .popTotalBtn{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #2c9a0d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .popUpBtnDiv{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+  }
+  .totalPrice{
+    text-align: center;
+   
+    background: #ffea10;
+    padding: 1rem;
+    text-transform: uppercase;
   }
 @media(max-width:720px){
     .mens-container{
@@ -249,6 +272,11 @@ body{
         display: block;
     }
    
+}
+@media(max-width:520px){
+    .DbImg{
+        width: 25%;
+    }
 }
 @media(max-width:330px){
     .men-part1Btn{
