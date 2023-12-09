@@ -162,10 +162,35 @@ cartTotalValue.addEventListener("click",(e)=>{
     popup.appendChild(totalPrice)
     const popUpBtnDiv = document.createElement("div")
     const popTotalBtn = document.createElement("button")
+    const popCancelBtn = document.createElement("button")
+
     popTotalBtn.innerText = "Confirm Order"
+    popCancelBtn.innerText = "Cancel Order"
+    popCancelBtn.classList.add("popCancelBtn")
     popTotalBtn.classList.add("popTotalBtn")
     popUpBtnDiv.classList.add("popUpBtnDiv")
+
+   popTotalBtn.addEventListener("click",()=>{
+     localStorage.clear()
+     totalPrice.innerText = "Congratulations Order Confirmed"
+     
+     setInterval(() => {
+      location.reload()
+     },5000);
+   })
+   popCancelBtn.addEventListener("click",()=>{
+    localStorage.clear()
+    totalPrice.innerText = "Order Cancelled"
+    
+    setInterval(() => {
+     location.reload()
+    },5000);
+   })
+
+  
+
     popUpBtnDiv.appendChild(popTotalBtn)
+    popUpBtnDiv.appendChild(popCancelBtn)
     popup.appendChild(popUpBtnDiv)
   popup.classList.add("open")
 })
