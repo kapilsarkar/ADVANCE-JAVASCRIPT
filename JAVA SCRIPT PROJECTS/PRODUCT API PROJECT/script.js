@@ -199,4 +199,3 @@ closePopUp.addEventListener("click",()=>{
   popup.classList.remove("open")
 })
 
-//₹

@@ -275,6 +275,44 @@ body{
     background-color: rgb(235, 16, 59);
     color: #fff;
 }
+.jewl1-partCategory{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #e5ff74;
+}
+.jewls-part1Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.jewl-part1Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.jewl-part1Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.jewl-Part1Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.jewl-part1Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;
