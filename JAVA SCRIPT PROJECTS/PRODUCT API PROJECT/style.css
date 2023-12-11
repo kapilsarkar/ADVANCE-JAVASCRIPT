@@ -312,7 +312,103 @@ body{
     cursor: pointer;
     margin-bottom: 1.2rem;
 }
-
+.jewels-part2{
+    width: 42%;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgb(235, 16, 59);
+    color: #fff;
+}
+.jewls-part2Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.jewl-part2Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.jewl-part2Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.jewl-Part2Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.jewl-part2Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+.jewl2-partCategory{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #e5ff74;
+}
+.elec-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2.3rem;
+}
+.elec-part1{
+    width: 42%;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgb(235, 16, 59);
+    color: #fff;
+}
+.elec-part1Category{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #e5ff74;
+}
+.elec-part1Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.elec-part1Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.elec-part1Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.elec-Part1Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.elec-part1Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;
@@ -342,7 +438,12 @@ body{
     .jewels-part1{
         width: 70%;
     }
-   
+    .jewels-part2{
+        width: 70%;
+    }
+   .elec-part1{
+     width: 70%;
+   }
 }
 @media(max-width:520px){
     .DbImg{
@@ -354,6 +455,12 @@ body{
         padding: 10px 20px;
     }
     .men-part2Btn{
+        padding: 10px 20px;
+    }
+    .jewl-part1Btn{
+        padding: 10px 20px;
+    }
+    .jewl-part2Btn{
         padding: 10px 20px;
     }
     

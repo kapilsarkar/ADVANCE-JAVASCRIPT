@@ -199,3 +199,148 @@ closePopUp.addEventListener("click",()=>{
   popup.classList.remove("open")
 })
 
+// CODE FOR JEWELRY  PART1---
+
+const jewelImg1 = document.querySelector(".jewls-part1Img")
+const jewelDesc1 = document.querySelector(".jewl-part1Desc")
+const jewelTitle1 = document.querySelector(".jewl-part1Title")
+const jewelPrice1 = document.querySelector(".jewl-Part1Price")
+const jewel1 = document.querySelector(".jewl1-partCategory");
+
+async function jewelDisplayPart1(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const jewelCategory1 = jsonValue.filter((ct)=>{
+      if(ct.category === "jewelery"){
+         return ct
+      } 
+    }) 
+
+    const jewelCateGoryPart1 = jewelCategory1.filter((fr)=>{
+      if(fr.id === 8){
+        return fr
+      }
+    })
+
+    jewelCateGoryPart1.map((e)=>{
+      jewelImg1.src = e.image
+      jewelDesc1.innerText = e.description
+      jewelPrice1.innerText = e.price
+      jewel1.innerHTML = e.category
+      jewelTitle1.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+jewelDisplayPart1()
+const jewlePart1Btn = document.querySelector(".jewl-part1Btn");
+
+jewlePart1Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  jewlePart1Btn.innerText = "Item Added"
+  jewlePart1Btn.disabled = true
+  addData(jewel1.innerText,jewelTitle1.innerText,jewelPrice1.innerText,jewelImg1.src)
+})
+
+// CODE FOR JEWELRY  PART2---
+
+const jewelImg2 = document.querySelector(".jewls-part2Img")
+const jewelDesc2 = document.querySelector(".jewl-part2Desc")
+const jewelTitle2 = document.querySelector(".jewl-part2Title")
+const jewelPrice2 = document.querySelector(".jewl-Part2Price")
+const jewel2 = document.querySelector(".jewl2-partCategory");
+
+async function jewelDisplayPart2(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const jewelCategory2 = jsonValue.filter((ct)=>{
+      if(ct.category === "jewelery"){
+         return ct
+      } 
+    }) 
+
+    const jewelCateGoryPart2 = jewelCategory2.filter((fr)=>{
+      if(fr.id === 6){
+        return fr
+      }
+    })
+
+    jewelCateGoryPart2.map((e)=>{
+      jewelImg2.src = e.image
+      jewelDesc2.innerText = e.description
+      jewelPrice2.innerText = e.price
+      jewel2.innerHTML = e.category
+      jewelTitle2.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+jewelDisplayPart2()
+
+const jewlePart2Btn = document.querySelector(".jewl-part2Btn");
+
+jewlePart2Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  jewlePart2Btn.innerText = "Item Added"
+  jewlePart2Btn.disabled = true
+  addData(jewel2.innerText,jewelTitle2.innerText,jewelPrice2.innerText,jewelImg2.src)
+})
+
+// CODE FOR ELECTRONICS  PART1---
+
+const elecImg1 = document.querySelector(".elec-part1Img")
+const elecDesc1 = document.querySelector(".elec-part1Desc")
+const elecTitle1 = document.querySelector(".elec-part1Title")
+const elecPrice1 = document.querySelector(".elec-Part1Price")
+const elec1 = document.querySelector(".elec-part1Category");
+
+async function elecDisplayPart1(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const elcCategory1 = jsonValue.filter((ct)=>{
+      if(ct.category === "electronics"){
+         return ct
+      } 
+    }) 
+
+    const elecCateGoryPart1 = elcCategory1.filter((fr)=>{
+      if(fr.id === 9){
+        return fr
+      }
+    })
+
+    elecCateGoryPart1.map((e)=>{
+      elecImg1.src = e.image
+      elecDesc1.innerText = e.description
+      elecPrice1.innerText = e.price
+      elec1.innerHTML = e.category
+      elecTitle1.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+elecDisplayPart1()
+
+const elecPart1Btn = document.querySelector(".elec-part1Btn");
+
+elecPart1Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  elecPart1Btn.innerText = "Item Added"
+  elecPart1Btn.disabled = true
+  addData(elec1.innerText,elecTitle1.innerText,elecPrice1.innerText,elecImg1.src)
+})
