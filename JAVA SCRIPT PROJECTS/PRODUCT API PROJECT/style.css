@@ -36,6 +36,10 @@ body{
     font-size: 18px;
     font-weight: 900;
 }
+.navMenu li a{
+    text-decoration: none;
+    color: #fff;
+}
 .menHead{
     margin-top: 1rem;
     background-color: rgb(221 20 46);
@@ -480,6 +484,77 @@ body{
     padding: 3px 6px;
     display: flex;
 }
+.women-part1Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.women-part1Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.women-Part1Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.women-part1Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
+.women-part2{
+    width: 42%;
+    border: 1px solid #fff;
+    border-radius: 1.2rem;
+    padding: 5px 10px;
+    background-color: rgb(235, 16, 59);
+    color: #fff;  
+}
+.women-part2Category{
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #e5ff74;
+}
+.women-part2Img{
+    width: 56%;
+    padding: 3px 6px;
+    display: flex;
+}
+.women-part2Desc{
+    font-weight: 600;
+    font-size: 14px;
+}
+.women-part2Title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.women-Part2Price{
+    font-weight: 900;
+    font-size: 24px;
+}
+.women-part2Btn{
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #00c81c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+}
 @media(max-width:720px){
     .mens-container{
         flex-direction: column;
@@ -531,6 +606,9 @@ body{
    .women-part1{
     width: 70%;
    }
+   .women-part2{
+    width: 70%;
+   }
 }
 @media(max-width:520px){
     .DbImg{
@@ -554,6 +632,13 @@ body{
         padding: 10px 20px;
     }
     .elec-part2Btn{
+        padding: 10px 20px;
+    }
+    .women-part1Btn{
+        padding: 10px 20px;
+    }
+
+    .women-part2Btn{
         padding: 10px 20px;
     }
     

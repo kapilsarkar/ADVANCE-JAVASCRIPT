@@ -394,3 +394,104 @@ elecPart2Btn.addEventListener("click",()=>{
   elecPart2Btn.disabled = true
   addData(elec2.innerText,elecTitle2.innerText,elecPrice2.innerText,elecImg2.src)
 })
+
+// CODE FOR WOMEN  PART1---
+
+const womenImg1 = document.querySelector(".women-part1Img")
+const womenDesc1 = document.querySelector(".women-part1Desc")
+const womenTitle1 = document.querySelector(".women-part1Title")
+const womenPrice1 = document.querySelector(".women-Part1Price")
+const women1 = document.querySelector(".women-part1Category");
+
+
+async function womenDisplayPart1(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const womenCategory1 = jsonValue.filter((ct)=>{
+      if(ct.category === "women's clothing"){
+         return ct
+      } 
+    }) 
+
+    const womenCateGoryPart1 = womenCategory1.filter((fr)=>{
+      if(fr.id === 18){
+        return fr
+      }
+    })
+
+    womenCateGoryPart1.map((e)=>{
+      womenImg1.src = e.image
+      womenDesc1.innerText = e.description
+      womenPrice1.innerText = e.price
+      women1.innerHTML = e.category
+      womenTitle1.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+womenDisplayPart1()
+
+const womenPart1Btn = document.querySelector(".women-part1Btn");
+
+womenPart1Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  womenPart1Btn.innerText = "Item Added"
+  womenPart1Btn.disabled = true
+  addData(women1.innerText,womenTitle1.innerText,womenPrice1.innerText,womenImg1.src)
+})
+
+// CODE FOR WOMEN  PART2---
+
+
+const womenImg2 = document.querySelector(".women-part2Img")
+const womenDesc2 = document.querySelector(".women-part2Desc")
+const womenTitle2 = document.querySelector(".women-part2Title")
+const womenPrice2 = document.querySelector(".women-Part2Price")
+const women2 = document.querySelector(".women-part2Category");
+
+
+async function womenDisplayPart2(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const womenCategory2 = jsonValue.filter((ct)=>{
+      if(ct.category === "women's clothing"){
+         return ct
+      } 
+    }) 
+
+    const womenCateGoryPart2 = womenCategory2.filter((fr)=>{
+      if(fr.id === 19){
+        return fr
+      }
+    })
+
+    womenCateGoryPart2.map((e)=>{
+      womenImg2.src = e.image
+      womenDesc2.innerText = e.description
+      womenPrice2.innerText = e.price
+      women2.innerHTML = e.category
+      womenTitle2.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+womenDisplayPart2()
+
+const womenPart2Btn = document.querySelector(".women-part2Btn");
+
+womenPart2Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  womenPart2Btn.innerText = "Item Added"
+  womenPart2Btn.disabled = true
+  addData(women2.innerText,womenTitle2.innerText,womenPrice2.innerText,womenImg2.src)
+})
