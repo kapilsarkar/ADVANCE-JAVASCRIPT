@@ -155,10 +155,10 @@ cartTotalValue.addEventListener("click",(e)=>{
   totalPrice.classList.add("totalPrice")
 
     let tPrice = myData.reduce((acc,item)=>{
-            return acc + parseFloat(item.price)
+            return acc + parseInt(item.price)
     },0)
    
-    totalPrice.innerText =`Total Price:₹ ${tPrice}`
+    totalPrice.innerText =`Total Effective Price:₹ ${tPrice}`
     popup.appendChild(totalPrice)
     const popUpBtnDiv = document.createElement("div")
     const popTotalBtn = document.createElement("button")
@@ -343,4 +343,54 @@ elecPart1Btn.addEventListener("click",()=>{
   elecPart1Btn.innerText = "Item Added"
   elecPart1Btn.disabled = true
   addData(elec1.innerText,elecTitle1.innerText,elecPrice1.innerText,elecImg1.src)
+})
+
+// CODE FOR ELECTRONICS  PART2---
+
+const elecImg2 = document.querySelector(".elec-part2Img")
+const elecDesc2 = document.querySelector(".elec-part2Desc")
+const elecTitle2 = document.querySelector(".elec-part2Title")
+const elecPrice2 = document.querySelector(".elec-Part2Price")
+const elec2 = document.querySelector(".elec-part2Category");
+
+
+async function elecDisplayPart2(){
+  try{
+    const apiData = await fetch(url)
+    const jsonValue = await apiData.json()
+    const elcCategory2 = jsonValue.filter((ct)=>{
+      if(ct.category === "electronics"){
+         return ct
+      } 
+    }) 
+
+    const elecCateGoryPart2 = elcCategory2.filter((fr)=>{
+      if(fr.id === 12){
+        return fr
+      }
+    })
+
+    elecCateGoryPart2.map((e)=>{
+      elecImg2.src = e.image
+      elecDesc2.innerText = e.description
+      elecPrice2.innerText = e.price
+      elec2.innerHTML = e.category
+      elecTitle2.innerText = e.title
+    })
+
+
+  }
+  catch(err){
+     console.log(err)
+  }
+}
+elecDisplayPart2()
+
+const elecPart2Btn = document.querySelector(".elec-part2Btn");
+
+elecPart2Btn.addEventListener("click",()=>{
+  cartNumber.innerText = num++
+  elecPart2Btn.innerText = "Item Added"
+  elecPart2Btn.disabled = true
+  addData(elec2.innerText,elecTitle2.innerText,elecPrice2.innerText,elecImg2.src)
 })
