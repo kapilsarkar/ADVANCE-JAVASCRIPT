@@ -15,7 +15,29 @@ html {
   }
   .titleHead{
     margin-top: 1.2rem;
+    color: #e8ff15;
+    position: relative;
+    font-weight: 900;
   }
+
+  .titleHead .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .titleHead .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+
+
+
 #cart{
     color: #fff;
     display: flex;
@@ -654,3 +676,22 @@ html {
     }
     
 }
+
+@media(max-width:920px){
+    .navMenu{
+        gap: 2rem;
+    }
+}
+
+
+/* code for mainAnimation */
+
+.mainAnimation{
+    width: 100%;
+   
+}
+.mainAnimation img{
+    width: 50%;
+}
+
+

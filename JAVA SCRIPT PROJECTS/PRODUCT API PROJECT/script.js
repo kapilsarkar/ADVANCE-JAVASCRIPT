@@ -495,3 +495,28 @@ womenPart2Btn.addEventListener("click",()=>{
   womenPart2Btn.disabled = true
   addData(women2.innerText,womenTitle2.innerText,womenPrice2.innerText,womenImg2.src)
 })
+
+
+// CODE FOR MAIN TITLE ANIMATION
+var textWrapper = document.querySelector('.titleHead .letter');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.titleHead .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+
+
+  
