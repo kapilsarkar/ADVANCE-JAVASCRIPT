@@ -10,12 +10,18 @@ body{
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
+  .titleHead{
+    margin-top: 1.2rem;
+  }
 #cart{
     color: #fff;
     display: flex;
     justify-content: right;
     font-size: 24px;
-    margin-top: -25px;
+    /* margin-top: -25px; */
     position: relative;
     left: -20px;
     z-index: 999;
@@ -29,12 +35,13 @@ body{
     display: flex;
     padding: 3px 10px;
     list-style: none;
-    justify-content: start;
-    gap: 2.3rem;
+    justify-content: center;
+    gap: 5.4rem;
 }
 .navMenu li{
     font-size: 18px;
     font-weight: 900;
+    cursor: pointer;
 }
 .navMenu li a{
     text-decoration: none;
@@ -163,6 +170,10 @@ body{
     padding: 1.5rem;
     font-weight: 700;
     cursor: pointer;
+}
+.humburgerList li a{
+    text-decoration: none;
+    color: #fff;
 }
 .humbugerIconBar{
     display: none;
