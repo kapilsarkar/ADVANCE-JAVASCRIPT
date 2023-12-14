@@ -27,3 +27,4 @@
 
 1. `PERSONAL INFORMATION STORAGE APP USING LOCAL STORAGE` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/PERSONAL%20INFORMATION%20STORE):red_circle::arrow_right:[LIVE LINK](https://perstoreappkapil.netlify.app/)
 
+1. `E-COMMERCE WEBPAGE USING PRODUCT API` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/PRODUCT%20API%20PROJECT):red_circle::arrow_right:[LIVE LINK](https://productapikapilsarkar.netlify.app/)
