@@ -50,8 +50,9 @@ html {
     cursor: pointer;
 }
 .navBar{
-    background-color: #8e1aa0;
+    /* background-color: #8e1aa0; */
     padding: 15px 10px;
+    background-color: #2f1080;
 }
 .navMenu{
     display: flex;
@@ -70,7 +71,7 @@ html {
     color: #fff;
 }
 .menHead{
-    margin-top: 1rem;
+    
     background-color: rgb(221 20 46);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -234,8 +235,8 @@ html {
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
     overflow-y: scroll;
-    /* display: none; */
-}
+     z-index: 500;
+    }
 .popup.open{
     /* display: block; */
     transform: scale(1);
@@ -647,6 +648,9 @@ html {
     .DbImg{
         width: 25%;
     }
+    .ml5{
+        font-size: 1.2rem;
+    }
 }
 @media(max-width:330px){
     .men-part1Btn{
@@ -688,10 +692,65 @@ html {
 
 .mainAnimation{
     width: 100%;
+    /* background-color: #ff8474; */
+    padding: 1.2rem;
+    background-color: rgb(16 23 235);
    
 }
-.mainAnimation img{
+.ml5 {
+    position: relative;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #f0f011;
     width: 50%;
+    margin-inline: auto;
+    /* background-color: #ff8474; */
+   
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #d41919;
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    /* font-style: italic; */
+    font-weight: 700;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+.footer{
+    width: 100%;
+    background-color: #d41919;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
 }
-
-
+.footer h1{
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
