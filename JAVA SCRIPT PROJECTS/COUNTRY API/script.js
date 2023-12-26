@@ -12,7 +12,7 @@ fetch("https://restcountries.com/v3.1/all")
       const countryCard = document.createElement("a");
       countryCard.classList.add("country-card");
       countryCard.href =`/country.html?name=${country.name.common}`
-      countryCard.innerHTML = ` <img src=" ${country.flags.svg}" alt="flag" />
+      countryCard.innerHTML = ` <img src=" ${country.flags.svg}" alt="${country.name.common}" />
     <div class="card-text">
       <h3 class="card-title">${country.name.common}</h3>
       <p><b>Population: </b>${country.population}</p>
