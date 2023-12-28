@@ -17,7 +17,6 @@
     flex-direction: column;
     row-gap: 10px;
     column-gap: 64px;
-    max-height: 180px;
     flex-wrap: wrap;
 }
 .details-text p {
@@ -46,6 +45,9 @@
     .details-text{
         display: block;
         max-height: unset;
+    }
+    .details-text p {
+        margin: 1rem;
     }
    
 }
