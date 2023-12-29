@@ -40,3 +40,5 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`).then((
     languages.innerText = Object.values(country.languages).join(", ")
     
 })
+
+//code for border countries
