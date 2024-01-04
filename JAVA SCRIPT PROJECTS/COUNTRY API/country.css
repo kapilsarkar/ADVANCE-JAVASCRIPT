@@ -2,6 +2,7 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) ;
     padding: 6px 24px;
     border-radius: 5px;
+    cursor: pointer;
 }
 .country-details{
     display: flex;
@@ -24,6 +25,9 @@
 }
 .border-countries{
     margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
 }
 .border-countries a {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2) ;
@@ -31,6 +35,10 @@
     border-radius: 5px;
     margin-inline: 5px;
     font-size: 14px;
+}
+.country-details-container{
+    max-width: 1200px;
+    margin-inline: auto;
 }
 @media(max-width:840px){
     .country-details{

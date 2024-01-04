@@ -9,6 +9,8 @@ const capital = document.querySelector(".capital");
 const topLevelDomain = document.querySelector(".top-level-domain");
 const currencies = document.querySelector(".currencies");
 const languages = document.querySelector(".languages");
+const borderCountries = document.querySelector(".border-countries"); 
+const backBtn = document.querySelector(".back-button")
 
 console.log(countryName);
 
@@ -40,15 +42,23 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     
     if(country.borders){
         country.borders.forEach((border)=>{
-          console.log(border)
+         
           fetch(`https://restcountries.com/v3.1/alpha/${border}`).then((res)=> {
            return res.json()
           }
-          ).then((data)=>{
-            console.log(data)
+          ).then(([borderCountry])=>{
+            console.log(borderCountry)
+            const borderCountryTag = document.createElement("a")
+            borderCountryTag.innerText = borderCountry.name.common
+            borderCountryTag.href = `country.html?name=${borderCountry.name.common}`
+            borderCountries.append(borderCountryTag)
           })
         })
     }
   });
+
+  backBtn.addEventListener("click",()=>{
+    history.back()
+  })
 
 //code for border countries
