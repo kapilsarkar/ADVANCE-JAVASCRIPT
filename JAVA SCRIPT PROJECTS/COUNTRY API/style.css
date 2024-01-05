@@ -29,7 +29,6 @@ a{
 }
 .countries-container{
     max-width: 1200px;
-    margin-inline: auto; 
     margin-top: 16px;
     display: flex;
     gap: 64px;
@@ -61,6 +60,10 @@ a{
 .card-title{
     font-size: 24px;
     margin-block: 16px;
+}
+.search-filter-container{
+    margin-top: 16px;
+    margin-bottom: 48px;
 }
 
 @media(max-width:768px){

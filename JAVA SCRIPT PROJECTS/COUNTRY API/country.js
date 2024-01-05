@@ -40,6 +40,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     }
     languages.innerText = Object.values(country.languages).join(", ");
     
+    //code for border countries
     if(country.borders){
         country.borders.forEach((border)=>{
          
@@ -61,4 +62,4 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     history.back()
   })
 
-//code for border countries
+
