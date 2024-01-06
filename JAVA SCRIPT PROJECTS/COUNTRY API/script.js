@@ -23,3 +23,11 @@ fetch("https://restcountries.com/v3.1/all")
       countriesContainer.append(countryCard);
     });
   });
+
+  //code for filter by region
+
+  const filterByRegion = document.querySelector(".filter-by-region");
+//https://restcountries.com/v3.1/region/europe
+  filterByRegion.addEventListener("change",(e)=>{
+    console.log(e.target.value)
+  })
