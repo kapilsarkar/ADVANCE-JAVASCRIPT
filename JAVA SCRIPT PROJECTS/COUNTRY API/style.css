@@ -34,6 +34,7 @@ a{
     gap: 64px;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-inline: auto;
 }
 .country-card{
     display: inline-block;
@@ -62,6 +63,8 @@ a{
     margin-block: 16px;
 }
 .search-filter-container{
+    max-width: 1200px;
+    margin-inline: auto;
     margin-top: 16px;
     margin-bottom: 48px;
     display: flex;

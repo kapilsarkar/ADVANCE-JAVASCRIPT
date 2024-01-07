@@ -2,11 +2,29 @@
 
 const countriesContainer = document.querySelector(".countries-container");
 
+//code for all countries
 fetch("https://restcountries.com/v3.1/all")
   .then((res) => {
     return res.json();
   })
-  .then((data) => {
+  .then(renderCountries) 
+
+  //code for filter by region
+
+  const filterByRegion = document.querySelector(".filter-by-region");
+
+  filterByRegion.addEventListener("change",(e)=>{
+    console.log(e.target.value)
+    fetch(`https://restcountries.com/v3.1/region/${filterByRegion.value}`)
+    .then((res) => {
+      return res.json();
+    })
+    .then(renderCountries) 
+    
+  })
+
+  function renderCountries(data){
+    countriesContainer.innerHTML = ''
     data.forEach((country) => {
       console.log(country);
       const countryCard = document.createElement("a");
@@ -22,12 +40,4 @@ fetch("https://restcountries.com/v3.1/all")
 
       countriesContainer.append(countryCard);
     });
-  });
-
-  //code for filter by region
-
-  const filterByRegion = document.querySelector(".filter-by-region");
-//https://restcountries.com/v3.1/region/europe
-  filterByRegion.addEventListener("change",(e)=>{
-    console.log(e.target.value)
-  })
+  }
