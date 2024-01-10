@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.movieHead{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgb(5, 63, 5);
+    color: #fff;
+}
+.movieContainer{
+    width: 70%;
+    margin-inline: auto;
+    border: 1px solid rgb(228, 10, 61);
+}
