@@ -17,4 +17,34 @@ body{
     width: 70%;
     margin-inline: auto;
     border: 1px solid rgb(228, 10, 61);
+    margin-top: 2rem;
+}
+.movieContainerInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+.movieSearch{
+    font-size: 1rem;
+    
+    padding: 16px;
+    width: 60%;
+}
+.BtnSearch{
+      padding: 1rem 1.5rem;
+      background-color: rgb(205 10 203);
+      color: #fff;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      border: none;
+}
+@media(max-width:640px){
+    .movieSearch{
+        padding: 1rem;
+        width: 42%;
+        font-size: 0.7rem;
+    }
 }
