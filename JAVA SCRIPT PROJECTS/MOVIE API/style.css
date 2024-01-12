@@ -23,15 +23,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     gap: 1rem;
 }
 .movieSearch{
-    font-size: 1rem;
-    
+    font-size: 1rem; 
     padding: 16px;
     width: 60%;
 }
+.movieDetails{
+    display: flex;
+}
+
 .BtnSearch{
       padding: 1rem 1.5rem;
       background-color: rgb(205 10 203);
@@ -41,10 +44,46 @@ body{
       font-size: 1rem;
       border: none;
 }
+.movieTitle{
+    text-align: center;
+    padding: 0.5rem;
+}
+.movieImage{
+    width: 42%;
+    padding: 1rem;
+}
+.movieGenre{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.movieActors{
+   font-size: 1rem;
+   font-weight: 700; 
+   margin-top: 1.5rem;
+}
+.moviePlot{
+    font-size: 1rem;
+   font-weight: 700; 
+   margin-top: 1.5rem;
+}
+.movieRating{
+    font-size: 1.5rem;
+   font-weight: 700; 
+   margin-top: 1.5rem;
+}
+.releasedDate{
+    font-size: 1.2rem;
+   font-weight: 700; 
+   margin-top: 1.5rem;
+}
 @media(max-width:640px){
     .movieSearch{
         padding: 1rem;
-        width: 42%;
+        width: 82%;
         font-size: 0.7rem;
+    }
+    .movieContainer{
+        width: 90%;
     }
 }
