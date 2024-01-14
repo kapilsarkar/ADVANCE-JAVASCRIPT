@@ -25,6 +25,7 @@ function getMovie(movie){
   }).then((data)=>{
    
     if(data.Response == "True"){
+      console.log(data)
       movieTitle.innerHTML = `${data.Title}`
       movieDetails.innerHTML = `
       <img
@@ -43,16 +44,27 @@ function getMovie(movie){
       <p class="moveRunTime">RunTime : ${data.Runtime}</p>
       <p class="movieDirector">Director: ${data.Director}</p>
       <p class="movieLanguage">Movie Language : ${data.Language}</p>
+      <p class="movieBoxOffice">Box Office Collection : ${data.BoxOffice}</p>
     </div>`
     }
     else{
       movieTitle.innerHTML = "WRONG DETAILS"
+      movieDetails.innerHTML = ""
     }
+  }).catch((err)=>{
+    console.log(err)
   })
 }
 
+//de06f04c0473e3ed3ca9d7fd695e6dc8
+
+
+//https://api.themoviedb.org/3/movie/now_playing?api_key=de06f04c0473e3ed3ca9d7fd695e6dc8
 
 
 
-
-
+// fetch("https://api.themoviedb.org/3/movie/now_playing?api_key=de06f04c0473e3ed3ca9d7fd695e6dc8").then((res)=>{
+//   return res.json()
+// }).then((data)=>{
+//   console.log(data)
+// })

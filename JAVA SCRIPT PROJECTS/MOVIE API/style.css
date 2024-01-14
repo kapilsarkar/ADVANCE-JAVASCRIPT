@@ -8,18 +8,22 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 0, 0, 0.952);
     color: #fff;
+    
 }
 .movieHead{
     text-align: center;
     padding: 1.5rem;
-    background-color: rgb(5, 63, 5);
-    color: #fff;
+    background-color: rgb(230 190 0);
+    color: #162206;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 .movieContainer{
     width: 90%;
     margin-inline: auto;
-    border: 1px solid rgb(198 185 14);
-    margin-top: 2rem;
+    /* border: 1px solid rgb(198 185 14); */
+    margin-top: 0.5rem;
+    box-shadow: #9d9c3b 0px 22px 70px 4px;
 }
 .movieContainerInput{
     display: flex;
@@ -32,6 +36,7 @@ body{
     font-size: 1rem; 
     padding: 16px;
     width: 60%;
+    box-shadow: #fff 0px 25px 50px -12px;
 }
 .movieDetails{
     display: flex;
@@ -57,7 +62,9 @@ body{
 }
 .movieImage{
     width: 42%;
-    padding: 1rem;
+    /* padding: 1rem; */
+    box-shadow: #fff 0px 1px 1px 0px inset, #fff 0px 50px 100px -20px, #fff 0px 30px 60px -30px;
+    
 }
 .movieGenre{
     margin-top: 1.5rem;
@@ -107,6 +114,12 @@ body{
 .movieExtraDetails{
     padding: 1rem;
 }
+.movieBoxOffice{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d6d311;
+    margin-top: 1rem;
+}
 @media(max-width:640px){
     #movieSearch{
         padding: 1rem;
@@ -123,5 +136,10 @@ body{
     }
     .movieImage{
         width: 90%;
+    }
+}
+@media(max-width:300px){
+    .movieTitle{
+        font-size: 2rem;
     }
 }
