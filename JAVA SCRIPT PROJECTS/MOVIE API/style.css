@@ -10,6 +10,42 @@ body{
     color: #fff;
     
 }
+.top-Movies{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.topMovie1{
+    width: 52%;
+    box-shadow: #fff 0px 10px 36px 0px, rgb(133 125 26) 0px 0px 0px 1px;
+}
+.topMovieTitle{
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #ffe900;
+}
+.topMovieYear{
+    font-size: 1.2rem;
+    font-weight: 900; 
+    color: #f73e00;
+}
+.topMovieRunTime{
+    font-size: 1.2rem;
+    font-weight: 900; 
+    color: #ffc300;
+}
+.topMovieHead{
+    text-align: center;
+    color: #f73e00;
+    font-weight: 900;
+    padding: 1rem;
+}
+/* .topMovieList{
+    width: 20%;
+} */
 .movieHead{
     text-align: center;
     padding: 1.5rem;
@@ -61,7 +97,7 @@ body{
     font-weight: 900;
 }
 .movieImage{
-    width: 42%;
+    width: 32%;
     /* padding: 1rem; */
     box-shadow: #fff 0px 1px 1px 0px inset, #fff 0px 50px 100px -20px, #fff 0px 30px 60px -30px;
     
