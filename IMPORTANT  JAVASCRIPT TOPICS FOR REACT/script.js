@@ -142,4 +142,45 @@ const data = [
   function getBook(id) {
     return data.find((d) => d.id === id);
   }
+
+  //PART-1 DESTRUCTURING OBJECT AND ARRAYS---
+
+  const book = getBook(2)
+  console.log(book)
+ //OBJECT DESTRUCTURING
+ const {title,author,genres} = book
+ console.log(`Author is :${author} and the title of the book is: ${title}`)
+ console.log(genres)
+//ARRAY DESTRUCTURING
+ const [primaryGenre] = genres
+ console.log(primaryGenre)
+
+ //PART-2 REST/SPREAD OPERATOR
+//REST OPERATOR FOR ARRAYS
+ const [...otherGenres] = genres
+ console.log(otherGenres)
+
+ //SPREAD OPERATOR FOR ARRAYS
+ const newGenres =[...genres]
+ console.log(newGenres)
+
+ //REST/ SPREAD OPERATOR IN CASE OF OBJECTS
+
+ const updatedBook = {...book,
+  //adding a new property
+  moviePublicationDate:'2010-10-5',
+  //overwriting the existing property
+  pages:300}
+ console.log(updatedBook)
+
+ //PART-3 OPTIONAL CHAINING
+ 
+ function getTotalReviewCount(book){
+  const goodReads = book.reviews.goodReads?.reviewsCount
+  const libraryReading = book.reviews.libraryreading?.reviewsCount
+  return goodReads + libraryReading
+ }
+
+ console.log(getTotalReviewCount(book))
+
   
