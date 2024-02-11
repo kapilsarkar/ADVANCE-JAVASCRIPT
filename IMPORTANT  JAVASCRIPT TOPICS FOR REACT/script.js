@@ -183,4 +183,49 @@ const data = [
 
  console.log(getTotalReviewCount(book))
 
-  
+ //Ternary Operator---
+  let pg= 500
+ const pagesRange = pg > 1000 ? "Mor than Thousand" : "Less than Thousand"
+ console.log(pagesRange)
+
+ //map()
+
+ const bk = getBooks()
+
+ const onlyTitle = bk.map((e)=>{
+  return e.title
+ })
+
+ console.log(onlyTitle)
+
+ const essentialData = bk.map((e)=>{
+  return `title:${e.title} and author:${e.author}`
+ })
+ console.log(essentialData)
+
+ //filter()
+
+ const longBooks = bk.filter((e)=>{
+   return e.pages > 500
+ })
+
+ console.log(longBooks)
+
+ const adventureBooks = bk.filter((e)=>{
+  return e.genres.includes("adventure")
+ }).map((e)=>{
+  return e.title
+ })
+
+ console.log(adventureBooks)
+
+ //reduce()
+
+ const pagesAllBooks = bk.reduce((cr,nw)=>{
+  return cr + nw.pages
+ },0)
+ console.log(pagesAllBooks)
+
+
+//sort()
+
