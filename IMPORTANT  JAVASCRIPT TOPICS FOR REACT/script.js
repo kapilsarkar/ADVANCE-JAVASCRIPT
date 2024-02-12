@@ -229,3 +229,45 @@ const data = [
 
 //sort()
 
+const x = [2,5,9,10,20]
+
+const sorted =x.slice().sort((a,b)=> `Ascending Order ${b-a}`
+ )
+console.log(sorted)
+
+const sortedByPages = bk.slice().sort((a,b)=> a.pages-b.pages)
+console.log(sortedByPages)
+
+//Immutable Arrays
+
+//Add a book object to array---
+
+const newBook = {
+  id:6,
+  title:"Shaktimaan",
+  author:"Kapil Sarkar",
+}
+
+const booksAfterAdd = [...bk,newBook]
+console.log(booksAfterAdd)
+
+//Delete a book object from array---
+
+const bookAfterDelete = booksAfterAdd.filter((e)=>{
+  return e.id!==3
+})
+
+console.log(bookAfterDelete)
+
+//Update a book object form array---
+
+const booksAfterUpdate = bookAfterDelete.map((e)=>{
+  return e.id === 1 ? {...bk,pages:900} : bk
+})
+
+console.log(booksAfterUpdate)
+
+//Promise and async await
+
+
+
