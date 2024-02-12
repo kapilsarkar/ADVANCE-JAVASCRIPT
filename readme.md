@@ -4,6 +4,12 @@
 
 ![IMG1](https://img.shields.io/badge/JAVASCRIPT---%20IMPORTANT%20TOPICS%20---GREEN):file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/ADVANCE%20JAVASCRIPT-CONCEPTS)
 
+![OMG](https://img.shields.io/badge/JAVASCRIPT%20---?style=plastic&logoColor=RED
+)  ![IMG](https://img.shields.io/badge/IMPORTANT%20---?style=plastic
+) ![IMG](https://img.shields.io/badge/TOPICS%20---?style=plastic
+) ![IMG](https://img.shields.io/badge/FOR%20REACT%20---?style=social
+) :file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/IMPORTANT%20%20JAVASCRIPT%20TOPICS%20FOR%20REACT)
+
 
 ![IMG2](https://img.shields.io/badge/JAVASCRIPT%20---REVISION%20---%20RED
 ):file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20REVISION)
@@ -14,6 +20,7 @@
 
 
 ![IMG4](https://img.shields.io/badge/IMPORTANT%20PROJECTS%20---%23FF5733
+) ![IMG](https://img.shields.io/badge/VANILLA%20%20JAVASCRIPT%20---?style=social
 )
 
 1. `TODO LIST`:open_file_folder::arrow_right: [FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/TO%20DO%20LIST):red_circle::arrow_right:  [LIVE LINK](https://todoappkapil.netlify.app/)
