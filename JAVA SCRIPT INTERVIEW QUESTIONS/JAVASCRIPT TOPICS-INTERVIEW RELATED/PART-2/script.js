@@ -9,9 +9,17 @@ const newArrayMap = numMapArray.map((e)=>{
 })
 
 console.log(newArrayMap)
-
+//filter()---
 const filterArray = numMapArray.filter((e)=>{
     return e> 2
 })
 
 console.log(filterArray)
+
+//reduce()---
+
+const sum = numMapArray.reduce((acc,curr,i,arr)=>{
+    return acc + curr
+},0)
+
+console.log(sum)
