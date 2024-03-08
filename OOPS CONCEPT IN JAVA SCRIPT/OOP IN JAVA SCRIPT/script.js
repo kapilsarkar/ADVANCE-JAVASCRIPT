@@ -1,13 +1,4 @@
-// const user1 = {
-//   firstName :"Kapil",
-//   lastName: "Sarkar",
-//   age:32,
 
-//   getAgeYear: function(){
-//     return console.log(new Date().getFullYear() - user1.age) 
-//   }
-// }
-// console.log(user1.getAgeYear())
 
 function createUser(firstName,lastName,age){
   const user = {
