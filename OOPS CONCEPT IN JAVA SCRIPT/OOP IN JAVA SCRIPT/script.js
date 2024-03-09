@@ -1,4 +1,4 @@
-
+//Factory Functions in Jva SCript---
 
 function createUser(firstName,lastName,age){
   const user = {
@@ -24,3 +24,13 @@ const user2 = createUser("Kapil","Sarkar",33)
 
 console.log(user2)
 console.log(user2.getAgeYear())
+
+
+
+
+function sayHi(){
+  console.log(this)
+  return "Hello Kapil"
+}
+
+sayHi()
