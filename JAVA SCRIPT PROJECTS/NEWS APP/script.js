@@ -5,11 +5,9 @@ async function news(){
     let newsData = await fetch(url)
     let jsonData = await newsData.json()
     console.log(jsonData)
-    console.log(jsonData.articles)
+    //console.log(jsonData.articles)
 
-    jsonData.articles.forEach((nw)=>{
-        console.log(nw)
-    })
+  
 }
 
 news()

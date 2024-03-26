@@ -1,9 +1,5 @@
 "use strict"
 
-//this inside nested arrow function
-
-//this inside doom
-
 
 //this in  global space
 
@@ -64,11 +60,29 @@ student.printName.call(student2)  //now value of this is student2
 
 //this keyword inside arrow function
 // arrow function do not have their this they take the value of their lexical environment where they are enclosed.
+//arrow function don't provide their this binding 
 const obj2 = {
   a: 10,
   x:()=>{
-    console.log(this)
+    console.log(this)  //enclosing lexical context
   }
 }
 
 obj2.x()
+
+
+const obj3 = {
+  a:50,
+  x:function(){
+    const y = ()=>{
+      console.log(this)
+    }
+    y()
+  }
+}
+
+obj3.x()
+
+//this inside doom --- reference to html element
+
+//this inside class,constructor
