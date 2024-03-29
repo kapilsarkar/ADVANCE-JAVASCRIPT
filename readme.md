@@ -15,6 +15,7 @@
 `JAVA SCRIPT PROJECTS`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
 
 
+
 ![IMG4](https://img.shields.io/badge/IMPORTANT%20PROJECTS%20---%23FF5733
 ) ![IMG](https://img.shields.io/badge/VANILLA%20%20JAVASCRIPT%20---?style=social
 )
