@@ -2,17 +2,22 @@
 ![IMG](https://img.shields.io/badge/JAVASCRIPT%20REPOSITORY%20---%23ED1C24
 )
  
-`JAVA SCRIPT OOPS CONCEPTS` :file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/OOPS%20CONCEPT%20IN%20JAVA%20SCRIPT/SECOND%20PART)
 
-`JAVA SCRIPT IMPORTANT TOPICS`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/ADVANCE%20JAVASCRIPT-CONCEPTS)
-
-`JAVA SCRIPT IMPORTANT TOPICS FOR REACT` :file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/IMPORTANT%20%20JAVASCRIPT%20TOPICS%20FOR%20REACT)
+ ** THIS REPOSITORY ABOUT LEARNING JAVASCRIPT FROM BASIC TO ADVANCE INCLUDING OOPS CONCEPT AND VANILLA JAVA SCRIPT PROJECTS **
 
 
-`JAVA SCRIPT REVISION`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20REVISION)
+- `JAVA SCRIPT IMPORTANT TOPICS`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/ADVANCE%20JAVASCRIPT-CONCEPTS)
+
+- `JAVA SCRIPT IMPORTANT TOPICS FOR REACT` :file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/IMPORTANT%20%20JAVASCRIPT%20TOPICS%20FOR%20REACT)
 
 
-`JAVA SCRIPT PROJECTS`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
+- `JAVA SCRIPT REVISION`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20REVISION)
+
+
+- `JAVA SCRIPT OOPS CONCEPTS` :file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/OOPS%20CONCEPT%20IN%20JAVA%20SCRIPT/SECOND%20PART)
+
+
+- `JAVA SCRIPT PROJECTS`:file_folder::arrow_forward:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS)
 
 
 
