@@ -17,7 +17,7 @@
 
 //https://newsapi.org/v2/everything?q=virat&apiKey=9a6cad2c29524869be31815d8d710b4d
 
-let url = "https://newsapi.org/v2/everything?q=virat&kohli&apiKey=9a6cad2c29524869be31815d8d710b4d"
+let url = "https://newsapi.org/v2/everything?q=india&apiKey=9a6cad2c29524869be31815d8d710b4d"
 
 async function news(){
     let newsData = await fetch(url)

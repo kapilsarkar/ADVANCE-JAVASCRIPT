@@ -28,9 +28,9 @@ body{
 .navbar ul{
     display: flex;
     list-style: none;
-    gap: 1rem;
     font-weight: 900;
     font-size: 1rem;
+    justify-content: space-around;
 }
 .header{
     width: 100%;
@@ -39,7 +39,7 @@ body{
     width: 60%;
     align-items: center;
     margin-inline: auto;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #f30f0f;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -60,6 +60,24 @@ body{
     text-align: center;
     color: #fff;
     font-weight: 900;
+    margin-bottom: 1rem;
+}
+.breaking-news-img{
+    width: 100%;
+    padding-top: 1rem;
+}
+.news-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+.news-card{
+    width: 55%;
+    border: 1px solid #f00;
+    border-radius: 10px;
+    padding: 1rem;
 }
 @media(max-width:410px){
     .search-section{
