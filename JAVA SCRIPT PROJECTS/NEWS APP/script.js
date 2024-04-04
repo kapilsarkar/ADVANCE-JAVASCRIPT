@@ -15,7 +15,7 @@
 
 //https://newsapi.org/v2/everything?q=virat&apiKey=9a6cad2c29524869be31815d8d710b4d
 let key = "9a6cad2c29524869be31815d8d710b4d";
-let url = `https://newsapi.org/v2/everything?q=politics&apiKey=${key}`;
+let url = `https://newsapi.org/v2/everything?q=India&apiKey=${key}`;
 let newsSection = document.querySelector(".news-section");
 
 async function news() {
@@ -26,7 +26,7 @@ async function news() {
 
   jsonValue.articles.map((e) => {
     console.log(e);
-
+   
     let newsCardDiv = document.createElement("div");
     newsCardDiv.classList.add("news-card");
     let newsTitle = document.createElement("h3");
@@ -38,6 +38,12 @@ async function news() {
     newsTitle.innerText = e.title
     newsImage.src=e.urlToImage
     newsDesc.innerText = e.description
+   
+    newsCardDiv.addEventListener("click",()=>{
+      window.open(e.url,"_blank")
+    })
+    
+
     newsCardDiv.append(newsTitle,newsImage,newsDesc)
     newsSection.appendChild(newsCardDiv)
   });
