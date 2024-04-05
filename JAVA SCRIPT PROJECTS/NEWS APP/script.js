@@ -1,52 +1,61 @@
-// let url = "https://newsapi.org/v2/everything?q=viratkohli&apiKey=9a6cad2c29524869be31815d8d710b4d"
-// let key = "9a6cad2c29524869be31815d8d710b4d"
-
-// async function news(){
-//     let newsData = await fetch(url)
-//     let jsonData = await newsData.json()
-//     console.log(jsonData)
-//     //console.log(jsonData.articles)
-
-// }
-
-// news()
-
-//9a6cad2c29524869be31815d8d710b4d
-
-//https://newsapi.org/v2/everything?q=virat&apiKey=9a6cad2c29524869be31815d8d710b4d
-let key = "9a6cad2c29524869be31815d8d710b4d";
-let url = `https://newsapi.org/v2/everything?q=India&apiKey=${key}`;
+//let key = "9a6cad2c29524869be31815d8d710b4d";
+ const key = "8a921abb339743c8a6f0a7784a87148f"
 let newsSection = document.querySelector(".news-section");
 
-async function news() {
-  let newsData = await fetch(url);
+let news = async function (input) {
+  let newsData = await fetch(
+    `https://newsapi.org/v2/everything?q=${input}&apiKey=${key}`
+  );
   let jsonValue = await newsData.json();
-  console.log(newsData);
-  console.log(jsonValue);
-
+  //console.log(jsonValue);
+  newsSection.innerHTML = "";
   jsonValue.articles.map((e) => {
-    console.log(e);
-   
+    // console.log(e);
+
     let newsCardDiv = document.createElement("div");
     newsCardDiv.classList.add("news-card");
-    let newsTitle = document.createElement("h3");
-    newsTitle.classList.add("news-card-title");
-    let newsImage = document.createElement("img");
-    newsImage.classList.add("news-card-img");
-    let newsDesc = document.createElement("p");
-    newsDesc.classList.add("news-desc");
-    newsTitle.innerText = e.title
-    newsImage.src=e.urlToImage
-    newsDesc.innerText = e.description
-   
-    newsCardDiv.addEventListener("click",()=>{
-      window.open(e.url,"_blank")
-    })
-    
 
-    newsCardDiv.append(newsTitle,newsImage,newsDesc)
-    newsSection.appendChild(newsCardDiv)
+    newsCardDiv.innerHTML = `  <h3 class="news-card-title">${e.title}</h3>
+       <img src="${e.urlToImage}" alt="image-card" class="news-card-img">
+       <p class="news-desc">${e.description}.</p>`;
+
+    newsCardDiv.addEventListener("click", () => {
+      window.open(e.url, "_blank");
+    });
+
+    newsSection.appendChild(newsCardDiv);
   });
-}
+};
 
-news();
+window.addEventListener("load", news("loksabha&elections"));
+
+let entertainment = document.querySelector(".entertainment");
+
+entertainment.addEventListener("click", (e) => {
+  news("Bollywood");
+});
+let sports = document.querySelector(".sports");
+sports.addEventListener("click", (e) => {
+  news("sports");
+});
+
+let politics = document.querySelector(".politics");
+
+politics.addEventListener("click", (e) => {
+  news("modi");
+});
+
+const searchBox = document.querySelector("#searchBox");
+
+const searchBtn = document.querySelector(".searchBtn");
+
+searchBtn.addEventListener("click", () => {
+  let searchValue = searchBox.value;
+  if(!searchValue) return
+  news(searchValue);
+});
+
+const logoStart = document.querySelector(".logo-start")
+logoStart.addEventListener("click",()=>{
+   news("loksabha")
+})
