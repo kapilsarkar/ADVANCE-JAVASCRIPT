@@ -42,4 +42,4 @@
 1. `MOVIE API PROJECT USING OMDB API` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/MOVIE%20API):red_circle::arrow_right:[LIVE LINK](https://kapilmovieproject.netlify.app/)
 
 
-1. `NEWS APP PROJECT USING NEWS API.ORG` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/NEWS%20APP)
+1. `NEWS APP PROJECT MADE BY USING NEWS API.ORG` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/NEWS%20APP)
