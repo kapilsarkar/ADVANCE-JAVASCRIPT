@@ -22,15 +22,31 @@ let key = "f97cc3e5fcb7435d869111902241804";
 //let url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${searchCity.value}`;
 
 const weather = async () => {
-  const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${searchCity.value}`);
-  const data = await res.json();
-  console.log(data);
-  console.log(searchCity.value);
-  cityName.innerHTML = data.location.name;
-  stateName.innerHTML = data.location.region;
+  try{
+    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${searchCity.value}`);
+    const data = await res.json();
+    console.log(data);
+    cityName.innerHTML = `City Name :${data.location.name}`;
+    stateName.innerHTML = `State name: ${data.location.region}`;
+    countryName.innerHTML = `Country Name : ${data.location.country}`
+    zoneName.innerHTML = `Zone Name : ${data.location.tz_id}`
+    localTime.innerHTML = `Local Time : ${data.location.localtime}`
+
+    temperature.innerHTML = `Temperature : ${data.current.temp_c} &#8451`
+    weatherCondn.innerHTML = `Weather Condition : ${data.current.condition.text}`
+  }
+  catch(err){
+    console.log(err)
+  }
+ 
 };
 
 searchBtn.addEventListener("click", (e) => {
-  weather();
-  console.log(searchCity.value);
+  if(!searchCity.value){
+    alert("Please Enter City Name")
+  }
+  else{
+    weather();
+  }
+ 
 });
