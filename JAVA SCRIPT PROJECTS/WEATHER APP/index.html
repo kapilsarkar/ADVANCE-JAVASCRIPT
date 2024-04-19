@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
-</head>
-<body>
-    <h1>Weather App</h1>
-</body>
+  </head>
+  <body>
+    <h1 class="weather-header">Weather App</h1>
+    <div class="main-container">
+      <div class="weather-container">
+        <h3 class="city-header">Enter City Name:</h3>
+        <input id="searchCity" type="text" placeholder="City Name" />
+        <button class="searchBtn">Search</button>
+        <div class="weather-details">
+          <div class="weather-details-part1">
+            <p class="city-name">City Name: </p>
+            <p class="state-name">Sate name: </p>
+            <p class="country-name">Country Name: India</p>
+            <p class="zone-Name">Region Name : Asia/Kolkata</p>
+            <p class="localTime">Local Time : 2024-04-19 15:16</p>
+          </div>
+          <div class="weather-details-part2">
+            <p class="temperature">Temperature : 43.3</p>
+            <p class="weather-condn">Current Weather Condition : Sunny</p>
+            <p class="humidity">Humidity : 10</p>
+            <p class="wind-speed">Wind Speed : 32.4</p>
+            <p class="rain">Rain Fore Cast : 0</p>
+          </div>
+          <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" class="weather-icon" alt="weather">
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
