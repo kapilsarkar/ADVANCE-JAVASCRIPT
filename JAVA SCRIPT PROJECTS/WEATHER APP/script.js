@@ -57,6 +57,7 @@ searchBtn.addEventListener("click", (e) => {
   }
   else{
     weather();
+    threeDayForeCast()
   }
 
 });
@@ -92,4 +93,18 @@ const asansol = async () => {
 
 window.addEventListener("load", (e) => {
   asansol();
+  
 });
+
+const threeDayForeCast = async()=>{
+   try{
+       const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchCity.value}&days=3`)
+
+       const data = await res.json()
+
+       console.log(data)
+   }
+   catch(err){
+    console.log(err)
+   }
+}
