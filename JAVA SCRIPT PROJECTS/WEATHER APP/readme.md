@@ -11,7 +11,7 @@
 - Api Used - weatherapi.com
 
 
- -  [LIVE LINK]()
+ -  [LIVE LINK](https://kapilweatherapp.netlify.app/)
 
  ![img](./images/1.png)
 
