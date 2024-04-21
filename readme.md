@@ -43,3 +43,6 @@
 
 
 1. `NEWS APP PROJECT MADE BY USING NEWS API.ORG` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/NEWS%20APP)
+
+
+1. `WEATHER APP PROJECT MADE BY USING WEATHER API.COM` :open_file_folder::arrow_right:[FOLDER LINK](https://github.com/kapilsarkar/ADVANCE-JAVASCRIPT/tree/main/JAVA%20SCRIPT%20PROJECTS/WEATHER%20APP):red_circle::arrow_right:[LIVE LINK](https://kapilweatherapp.netlify.app/)
