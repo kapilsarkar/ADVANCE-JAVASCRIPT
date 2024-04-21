@@ -52,14 +52,11 @@ const weather = async () => {
 };
 
 searchBtn.addEventListener("click", (e) => {
-  if(!searchCity.value){
-    alert("Please Enter City Name")
-  }
-  else{
+  if (!searchCity.value) {
+    alert("Please Enter City Name");
+  } else {
     weather();
-    threeDayForeCast()
   }
-
 });
 
 const asansol = async () => {
@@ -93,18 +90,85 @@ const asansol = async () => {
 
 window.addEventListener("load", (e) => {
   asansol();
-  
+  threeDayForeCastAsansol();
 });
+// day1-forcast starts
+const day1Date = document.querySelector(".day1-date");
+const day1Sunrise = document.querySelector(".day1-sunrise-value");
+const day1Sunset = document.querySelector(".day1-sunset-value");
+const day1ConditionText = document.querySelector(".day1-condition-text");
+const day1ConditionImg = document.querySelector(".day1-condition-img");
+const day1AvgTempValue = document.querySelector(".day1-avgtemp-value");
+const day1RainValue = document.querySelector(".day1-rainValue");
+//day1- forecast ends
 
-const threeDayForeCast = async()=>{
-   try{
-       const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${searchCity.value}&days=3`)
+//day2-forecast-starts
+const day2Date = document.querySelector(".day2-date");
+const day2Sunrise = document.querySelector(".day2-sunrise-value");
+const day2Sunset = document.querySelector(".day2-sunset-value");
+const day2ConditionText = document.querySelector(".day2-condition-text");
+const day2ConditionImg = document.querySelector(".day2-condition-img");
+const day2AvgTempValue = document.querySelector(".day2-avgtemp-value");
+const day2RainValue = document.querySelector(".day2-rainValue");
 
-       const data = await res.json()
+//day2-forecast-end
 
-       console.log(data)
-   }
-   catch(err){
-    console.log(err)
-   }
-}
+//day3-forecast-starts
+const day3Date = document.querySelector(".day3-date");
+const day3Sunrise = document.querySelector(".day3-sunrise-value");
+const day3Sunset = document.querySelector(".day3-sunset-value");
+const day3ConditionText = document.querySelector(".day3-condition-text");
+const day3ConditionImg = document.querySelector(".day3-condition-img");
+const day3AvgTempValue = document.querySelector(".day3-avgtemp-value");
+const day3RainValue = document.querySelector(".day3-rainValue");
+//day3-forecast-ends
+
+
+const threeDayForeCastAsansol = async () => {
+  try {
+    const res = await fetch(
+      `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=asansol&days=3`
+    );
+
+    const data = await res.json();
+
+    console.log(data);
+    //forecast day1-data starts---
+    day1Date.innerHTML = `<img src="./images/date.png" class="sunriseImg" alt="img">${data.forecast.forecastday[0].date} `;
+    day1Sunrise.innerHTML = `<img src="./images/sunrise.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[0].astro.sunrise}`;
+    day1Sunset.innerHTML = `<img src="./images/sunset.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[0].astro.sunset}`;
+
+    day1ConditionText.innerHTML =
+      data.forecast.forecastday[0].day.condition.text;
+    day1ConditionImg.src = `${data.forecast.forecastday[0].day.condition.icon}`;
+    day1AvgTempValue.innerHTML = `${data.forecast.forecastday[0].day.avgtemp_c} &#8451`;
+    day1RainValue.innerHTML = `<img src="./images/rain.png" class="rainImg2" alt="img"> ${data.forecast.forecastday[0].day.daily_chance_of_rain}`;
+    //forecast day1-data ends---
+
+    //forecast day2-data starts---
+    day2Date.innerHTML = `<img src="./images/date.png" class="sunriseImg" alt="img">${data.forecast.forecastday[1].date} `;
+    day2Sunrise.innerHTML = `<img src="./images/sunrise.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[1].astro.sunrise}`;
+    day2Sunset.innerHTML = `<img src="./images/sunset.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[1].astro.sunset}`;
+
+    day2ConditionText.innerHTML =
+      data.forecast.forecastday[1].day.condition.text;
+    day2ConditionImg.src = `${data.forecast.forecastday[1].day.condition.icon}`;
+    day2AvgTempValue.innerHTML = `${data.forecast.forecastday[1].day.avgtemp_c} &#8451`;
+    day2RainValue.innerHTML = `<img src="./images/rain.png" class="rainImg2" alt="img"> ${data.forecast.forecastday[1].day.daily_chance_of_rain}`;
+    //forecast day2-data ends---
+
+    //forecast day3-data starts---
+    day3Date.innerHTML = `<img src="./images/date.png" class="sunriseImg" alt="img">${data.forecast.forecastday[2].date} `;
+    day3Sunrise.innerHTML = `<img src="./images/sunrise.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[2].astro.sunrise}`;
+    day3Sunset.innerHTML = `<img src="./images/sunset.png" class="sunriseImg" alt="img"> ${data.forecast.forecastday[2].astro.sunset}`;
+
+    day3ConditionText.innerHTML =
+      data.forecast.forecastday[2].day.condition.text;
+    day3ConditionImg.src = `${data.forecast.forecastday[2].day.condition.icon}`;
+    day3AvgTempValue.innerHTML = `${data.forecast.forecastday[2].day.avgtemp_c} &#8451`;
+    day3RainValue.innerHTML = `<img src="./images/rain.png" class="rainImg2" alt="img"> ${data.forecast.forecastday[2].day.daily_chance_of_rain}`;
+    //forecast day3-data ends
+  } catch (err) {
+    console.log(err);
+  }
+};
