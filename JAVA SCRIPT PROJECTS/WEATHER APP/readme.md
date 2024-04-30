@@ -6,7 +6,7 @@
 
 - Along With that it shows the 3 day weather forecast.
 
-- To Search for a specific location put the name of the exaclocation on the Search Box 
+- To Search for a specific location put the name of the exact location on the Search Box 
 
 - Api Used - weatherapi.com
 
